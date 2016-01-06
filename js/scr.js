@@ -33,15 +33,15 @@ $(function(){
 		var boxb = $('#boxB').offset().top;
 		var boxc = $('#boxC').offset().top;
 		if(scrlcount>=(boxa-600)){
-			$('#boxA').animate({opacity:'100'},5000,'swing');
+			$('#boxA').animate({opacity:'1'},1000,'swing');
 		}
 		if(scrlcount>=(boxb-600)){
-			$('#boxB').animate({opacity:'100'},5000,'swing');
+			$('#boxB').animate({opacity:'1'},1000,'swing');
 		}
 		if(scrlcount>=(boxc-600)){
-			$('#boxC').animate({opacity:'100'},5000,'swing');
+			$('#boxC').animate({opacity:'1'},1000,'swing');
 		}
-		if(scrlcount>=1000){
+		if(scrlcount>=1500){
 			$('#goTop').fadeIn(800);
 		}else{
 			$('#goTop').fadeOut(800);
