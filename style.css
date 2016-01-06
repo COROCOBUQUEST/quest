@@ -137,6 +137,12 @@ nav ul li a {
 	background-color: red;
 }
 
+.st-p {
+	
+	border: solid 1px #222;
+	
+}
+
 /******CHARACTER*******/
 .maininner:nth-child(2) {
 	width: 100%;
