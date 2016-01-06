@@ -16,11 +16,21 @@ html,body {
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+}
+
+#bg_img {
+	position: relative;
+	z-index: 1;
+	background: steelblue;
+
+
 }
 
 #container {
 	width: 100%;
-	background-color: #fff;
+	position: relative;
+	z-index: 100;
 }
 
 /*******ヘッダー*********/
@@ -28,7 +38,8 @@ header {
 	width: 100%;
 	margin: 0;
 	padding-top: 5px;
-	background: pink;
+	position: relative;
+	z-index: 100;
 }
 /*******キャラクターがふわっとしゅっと*********/
 .mainimgbox {
