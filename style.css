@@ -16,11 +16,21 @@ html,body {
 body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+}
+
+#bg_img {
+	position: relative;
+	z-index: 1;
+	background: steelblue;
+
+
 }
 
 #container {
 	width: 100%;
-	background-color: #fff;
+	position: relative;
+	z-index: 100;
 }
 
 /*******ヘッダー*********/
@@ -28,7 +38,8 @@ header {
 	width: 100%;
 	margin: 0;
 	padding-top: 5px;
-	background: pink;
+	position: relative;
+	z-index: 100;
 }
 
 /*********ロゴらへん******/
@@ -59,16 +70,30 @@ header {
 }*/
 
 .h1-title {
+	width: 670px;
+	height: 150px;
+	margin: 0 auto;
+	background: url(http://placehold.jp/670x150.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*top: 500px;
+	left: calc(50% - 330px);
+	height: 10%;
+	margin: 0;
 	font-family: 'Droid Serif', serif;
 	font-size: 5em;
 	text-align: center;
-	margin: 0;
-	width: 60%;
-	height: 10%;
-	position: relative;
 	left: 25%;
-	bottom: -5%;
-	background-color: green;
+	bottom: -5%;*/
+}
+#box_height {
+	height: 150px;
+	position: relative;
+	top: -50px;
+}
+.h1-title img {
+	width: 670px;
+	height: 150px;
 }
 
 /*******フロートさしてるおしらせｂｏｘ*********/
