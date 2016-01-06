@@ -1,17 +1,28 @@
 $(function(){
 
-//ロードした時、タイトルの準備
-	$('h1').css({
-		width:'3000px',
-		height:'3000px',
-		position:'relative',
-		top:'-500px',
-		left:'-500px',
+//スクリーンサイズ取得
+	var sWidth = 0;
+	sWidth = window.innerWidth;
+
+if(sWidth>=700){
+	//ロードした時、タイトルの準備
+	$('#title_logo').css({
+		width:'2010px',
+		height:'450px',
 		opacity:'0'
 	});
+
 	setTimeout(function(){
-			$('h1').animate({width:'658px',height:'130px',top:'0',left:'0',opacity:'1'},800,'easeOutBounce');
+			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1500,'easeOutElastic');
 	},1000);
+
+}else{
+	alert('ちっさい');
+}
+
+
+
+
 
 
 });

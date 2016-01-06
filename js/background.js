@@ -28,6 +28,6 @@ $(function(){
 		setTimeout('cloud2()',2000);
 	}
 	function cloud3(){
-		$('#cloud3').animate({left:'-500px'},25000).animate({left:'2000px'},0);
+		$('#cloud3').animate({left:'-500px'},25000).animate({left:'2500px'},0);
 		setTimeout('cloud3()',1000);
 	}
