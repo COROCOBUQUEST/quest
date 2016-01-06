@@ -60,7 +60,7 @@ nav ul li a {
 header {
 	width: 100%;
 	margin: 0;
-	padding-top: 5px;
+	padding: 0;
 	position: relative;
 	z-index: 100;
 }
@@ -68,10 +68,17 @@ header {
 /*********ロゴらへん******/
 
 .headrogo {
-	margin: 5px;
+	width: 100%;
+	height: 70px;
+	margin: 0;
 	padding: 0;
 	text-align: right;
 	display: block;
+	background-color: blue;
+}
+
+.headrogo img {
+	margin: 10px;
 }
 
 /*******キャラクターがふわっとしゅっと*********/
@@ -79,7 +86,7 @@ header {
 	width: 1000px;
 	height: 500px;
 	padding: 0;
-	margin: 0 auto;
+	margin: 10px auto 0;
 }
 
 /*******タイトル*********/
@@ -160,7 +167,7 @@ header {
 	width:100%%;
 	height: 800px;
 	margin: 10px;
-	background-image: url("./img/storyimg01.png");
+	background-image: url("../img/storyimg01.png");
 	background-repeat: no-repeat;
 	background-position: 20% center;
 }
@@ -209,4 +216,10 @@ header {
 footer {
 	width: 100%;
 	background: gold;
+	padding: 10px;
+}
+
+.copyright {
+	font-size: small;
+	text-align: center;
 }
