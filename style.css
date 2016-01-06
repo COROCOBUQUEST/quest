@@ -72,10 +72,10 @@ header {
 	font-size: 5em;
 	text-align: center;
 	margin: 0;
-	width: 800px;
-	height: 200px;
+	width: 60%;
+	height: 10%;
 	position: relative;
-	left: 15%;
+	left: 25%;
 	bottom: -5%;
 	background-color: green;
 }
