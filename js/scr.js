@@ -20,15 +20,16 @@ $(function(){
 	});
 
 //NAV・ブックマーククリックで出たり引っ込んだり
-	var bkm = $('#bookmark').offset().left;
+	var flug = true;
 	$('#bookmark').click(function(){
-		if(bkm>=150){
+		if(flug == true){
 			$('#global_menu').animate({left:'-200px'},500,'swing');
 				bkm = 50;
 		}else{
 			$('#global_menu').animate({left:'0px'},500,'swing');
 			bkm = 200;
 		}
+		flug = !flug;//flugの中に入っているboolianをひっくり返す
 	});
 
 //右上のスクロール値を計って表示するやつ（あとで消す）/////
@@ -74,8 +75,6 @@ $(function(){
 		}
 
 	});
-
-
 
 //Nav・メニュータイトルクリックでスクロールリンク
 	$('#nav_story').click(function(){
