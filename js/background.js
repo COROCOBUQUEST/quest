@@ -14,8 +14,6 @@ $(function(){
 	$('#bg_img').prepend('<img src="./img/kumo03.png" id="cloud3">');
 	$('#cloud3').css({position:'absolute',zIndex:'1',left:'1000px'});
 
-
-
 });//jQuery終了
 
 

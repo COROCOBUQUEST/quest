@@ -65,7 +65,7 @@ $(function(){
 			$('#goTop').fadeOut(800);
 		}
 		
-		
+	var bkm = $('#bookmark').offset().left;
 		if(scrlcount>=1000){
 			if(bkm>=150){
 				$('#global_menu').addClass('js_bookmark_off').addClass('nav_off');
