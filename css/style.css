@@ -56,11 +56,6 @@ nav ul li a {
 	text-decoration: none;
 }
 
-/*おおぐろ印しおり・変更お願いします*/
-#bookmark {
-	position: relative;
-	left: 200px;
-}
 /*******ヘッダー*********/
 header {
 	width: 100%;
@@ -88,10 +83,11 @@ header {
 
 /*******キャラクターがふわっとしゅっと*********/
 .mainimgbox {
-	width: 1000px;
+	width: 80%;
 	height: 500px;
 	padding: 0;
 	margin: 10px auto 0;
+	background-color: aqua;
 }
 
 /*******タイトル*********/
@@ -122,32 +118,81 @@ header {
 	width: 670px;
 	height: 150px;
 }
+/******発売日**********************/
+.sale {
+	width: 400px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 18%;
+	background: green;
+	z-index: 100;
+}
 
-/*******フロートさしてるおしらせｂｏｘ*********/
-.topc2 {
-	width: 200px;
-	border: solid 1px #333;
-	padding: 10px;
-	margin: 30px;
-	background-color: #fff;
-	float: left;
+/*******小さい箱でお知らせ*********/
+.newstpics {
+	margin: 10%;
+	border: solid 1px #111;
+	position: absolute;
+	z-index: 102;
+}
+
+.newstpics ul li {
+	list-style-type: none;
 }
 
 /******phpで更新履歴のとこ***********/
 .uphistory {
-	height: 50px;
-	margin: 0;
-	text-align: center;
+	width: 40%;
+	height: 70px;
+	padding: 10px;
 	background-color: rgba(124, 207, 255,0.5);
 }
 
+.ups-h{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
 .uphistory dl {
+	margin: 0 10px;
+	padding: 0;
+}
+
+.uphistory dl dt {
+	margin: 0;
+}
+
+.uphistory dl dt dd{
+	margin: 0;
+}
+
+/*******ソフト情報の箱*********/
+.softbox {
+	width: 80%;
+}
+
+.softimg {
 	margin: 0;
 	padding: 0;
 }
 
-.uphistory dl dd{
-	margin: 0;
+.np2-1 {
+	margin: 10px;
+	padding: 10px;
+}
+
+.np2-1 li {
+	list-style-type: none;
+}
+	
+.topc2 {
+	width: 50%;
+	border: solid 1px #333;
+	padding: 10px;
+	margin: 30px;
 }
 
 /******メイン全体を入れてる箱*******/
@@ -191,13 +236,45 @@ header {
 	background-color: orange;
 }
 
-.crp {
-	width: 50%;
-	height: 500px;
-	margin: 20px 25%;
+.crbox {
+	width: 80%;
+	height: 550px;
+	margin: 20px 12%;
 	padding: 0;
 	border: solid 1px #444;
 	display: inline-block;
+	background-image: url("http://placehold.jp/300x400.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cname-h {
+	font-size: 2em;
+	font-family: 'Droid Serif', serif;
+	margin: 10px;
+}
+
+.cname-h:nth-child(2){
+	color: red;
+}
+
+.cr-p {
+	width: 220px;
+	height: 300px;
+	padding: 6px;
+	border: solid 1px #333;
+	display: inline-block;
+	background-color: rgba(255,255,255,0.5);
+	position: relative;
+	left: 70%;
+	top: 25%;
+}
+
+.cr-pvimg {
+	border: solid 2px #1D2E82;
+	position: relative;
+	right: 20%;
+	top: 5%;
 }
 
 /******ITEM*******/
