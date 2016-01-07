@@ -1,12 +1,5 @@
 $(function(){
 
-	$('#global_menu').css({left:'-100px'});
-	
-//各ボックスの高さ取得
-	var storyTop = $('#boxA').offset().top;
-	var charaTop = $('#boxB').offset().top;
-	var itemTop = $('#boxC').offset().top;
-	
 //メニュータイトルでスクロール
 	$('#nav_story').click(function(){
 		$('body,html').animate({scrollTop:storyTop},1000);
@@ -21,7 +14,19 @@ $(function(){
 		return false;
 	});
 
+	$(document).scroll(function(){
+		if(){
+		
+		}
+	});
 
+	$('#global_menu').css({left:'-150px'});
+
+
+//ブックマーククリックで出たり引っ込んだり
+	$('.bookmark').click(function(){
+		$('#global_menu').animate({left:'0px'},1000,'swing');
+	});
 /*
 	$('#nav_top,#nav_story,#nav_chara,#nav_item,#nav_ex').click(function(){
 		return false;
