@@ -57,11 +57,10 @@ nav ul li a {
 }
 
 /*おおぐろ印しおり・変更お願いします*/
-.bookmark {
+#bookmark {
 	position: relative;
 	left: 200px;
 }
-
 /*******ヘッダー*********/
 header {
 	width: 100%;

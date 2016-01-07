@@ -1,8 +1,5 @@
 $(function(){
 
-//ロードした時、ひとまずボックスを透明にしておく
-	$('#boxA,#boxB,#boxC').css({opacity:'0'});
-
 //各ボックスの高さ取得
 	var storyTop = $('#boxA').offset().top;
 	var charaTop = $('#boxB').offset().top;
@@ -13,23 +10,9 @@ $(function(){
 //にくきゅうするする
 ///////////////////////////////////
 
-//一番右下にGoTop作って隠しておきます
-	$('#container').after('<p id="goTop"><i class="fa fa-paw"></i><br><span class="gotop">Go Top</span></p>');
-//肉球CSS
-	$('#goTop').css({
-		position:'fixed',
-		bottom:'0px',
-		right:'50px',
-		zIndex:'10000',
-		fontSize:'3rem',
-		opacity:'0.7',
-		color:'#000',
-		lineHeight:'0',
-		textAling:'center',
-		cursor:'pointer'
-	}).hide();
-//GoTop文字のみCSS
-	$('.gotop').css({fontSize:'0.3em',fontWeight:'bold'});
+//一番右下にGoTop作って隠しておく
+	$('#container').after('<p id="goTop"><i class="fa fa-paw"></i><br><span class="gotop_text">Go Top</span></p>');
+	$('#goTop').hide();
 
 //肉球をクリックしてTopヘ上がる
 	$('#goTop').click(function(){
@@ -37,8 +20,8 @@ $(function(){
 	});
 
 //NAV・ブックマーククリックで出たり引っ込んだり
-	var bkm = $('.bookmark').offset().left;
-	$('.bookmark').click(function(){
+	var bkm = $('#bookmark').offset().left;
+	$('#bookmark').click(function(){
 		if(bkm>=150){
 			$('#global_menu').animate({left:'-200px'},500,'swing');
 				bkm = 50;
@@ -66,13 +49,13 @@ $(function(){
 //スクロールでコンテンツがふわっと出てくる・その１
 
 		if(scrlcount>=(storyTop-800)){
-			$('#boxA').animate({opacity:'1'},800,'swing');
+			$('#boxA').addClass('js_fadein').css({opacity:'1'});
 		}
 		if(scrlcount>=(charaTop-800)){
-			$('#boxB').animate({opacity:'1'},800,'swing');
+			$('#boxB').addClass('js_fadein').css({opacity:'1'});
 		}
 		if(scrlcount>=(itemTop-800)){
-			$('#boxC').animate({opacity:'1'},800,'swing');
+			$('#boxC').addClass('js_fadein').css({opacity:'1'});
 		}
 //スクロールでにくきゅう登場
 		if(scrlcount>=1500){
@@ -84,12 +67,11 @@ $(function(){
 		
 		if(scrlcount>=1000){
 			if(bkm>=150){
-				$('#global_menu').animate({left:'-200px'},800);
+				$('#global_menu').addClass('js_bookmark_off').addClass('nav_off');
+			}else{
+				$('#global_menu').addClass('js_bookmark_on').addClass('nav_on');
 			}
-		}/*else{
-			$('#global_menu').animate({left:'0px'},800);
-
-		}*/
+		}
 
 	});
 

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* にくきゅうGoTop
+/*-----------------------------------*/
+
+#goTop {
+	line-height: 0;
+	text-align: center;
+	position:fixed;
+	bottom: 0px;
+	right: 50px;
+	z-index: 10000;
+	font-size: 3rem;
+	color: #000;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.gotop_text {
+	font-size: 0.3em;
+	font-weight: bold;
+	}
+
+/* NAV・ブックマーククリックで
+/*-----------------------------------*/
+#bookmark {
+	cursor: pointer;
+}
+/*おおぐろ印しおり・変更お願いします*/
+#bookmark {
+	position: relative;
+	left: 200px;
+}
+
+.js_bookmark_off {
+	animation: bkm_off 1s !important;
+}
+.nav_off {
+	left: -200px ;
+}
+.js_bookmark_on {
+	animation: bkm_on 1s !important;
+}
+.nav_on {
+	left: 0 ;
+}
+
+@keyframes bkm_off{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: -200px;
+	}
+}
+
+@keyframes bkm_on{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: -200px;
+	}
+}
+
+
+/* スクロールでふわっと出現
+/*-----------------------------------*/
+#boxA,#boxB,#boxC {
+	opacity: 0;
+}
+.js_fadein {
+	animation: box_fadein 1s;
+}
+.js_show {
+	opacity: 1;
+}
+
+@keyframes box_fadein {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
