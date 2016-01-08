@@ -10,7 +10,21 @@
 		float: left;
 	}
 	/*キャラクターがふわっとしゅっと*/
-	
+	.mainimgbox img:nth-child(-n+3) {
+		visibility: hidden;
+	}
+	.newstpics img {
+		visibility: visible;
+	}
+	.mainimgbox {
+		width: 100%;
+		background: tomato;
+	}
+	/*発売日
+	.sale {
+		
+	}*/
+	/**/
 }
 /*スマホ用*/
 @media screen and (max-width:400px){
