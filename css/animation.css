@@ -32,33 +32,37 @@
 
 .js_bookmark_off {
 	animation: bkm_off 1s !important;
+	-webkit-animation: bkm_off 1s !important;
 }
 .nav_off {
 	left: -200px ;
 }
 .js_bookmark_on {
 	animation: bkm_on 1s !important;
+	-webkit-animation: bkm_on 1s !important;
 }
 .nav_on {
 	left: 0 ;
 }
 
 @keyframes bkm_off{
-	0%{
-		left: 0;
-	}
-	100%{
-		left: -200px;
-	}
+	0%{left: 0;}
+	100%{left: -200px;}
 }
 
 @keyframes bkm_on{
-	0%{
-		left: 0;
-	}
-	100%{
-		left: -200px;
-	}
+	0%{left: 0;}
+	100%{left: -200px;}
+}
+
+/*chrome用*/
+@-webkit-keyframes bkm_off{
+	0%{left: 0;}
+	100%{left: -200px;}
+}
+@-webkit-keyframes bkm_on{
+	0%{left: 0;}
+	100%{left: -200px;}
 }
 
 
@@ -69,18 +73,19 @@
 }
 .js_fadein {
 	animation: box_fadein 1s;
+	-webkit-animation: box_fadein 1s;
 }
 .js_show {
 	opacity: 1;
 }
 
 @keyframes box_fadein {
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes box_fadein {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
 }
 
 /* 【キャラボックス】スクロールでふわっと出現
@@ -96,6 +101,7 @@
 }
 .js_charabox_anime {
 	animation: charabox_pop 1s;
+	-webkit-animation: charabox_pop 1s;
 }
 
 @keyframes charabox_pop {
@@ -127,7 +133,8 @@
 	opacity: 0;
 }
 .js_chara_anime {
-	animation: charabox_pop 1s;
+	animation: chara_pop 1s;
+	-webkit-animation: charabox_pop 1s;
 }
 
 @keyframes chara_pop {
@@ -161,16 +168,18 @@
 	z-index: 1;
 	animation: cloud1 infinite;
 	animation-duration: 50s;
-
+	-webkit-animation: cloud1 infinite;
+	-webkit-animation-duration: 50s;
 }
 
 @keyframes cloud1 {
-	0%{
-		left: 2000px;
-	}
-	100%{
-		left: -500px;
-	}
+	0%{left: 2000px;}
+	100%{left: -500px;}
+}
+
+@-webkit-keyframes cloud1 {
+	0%{left: 2000px;}
+	100%{left: -500px;}
 }
 
 /*雲２*/
@@ -180,9 +189,19 @@
 	top: 200px;
 	animation: cloud2 infinite;
 	animation-duration: 70s;	
+	-webkit-animation: cloud2 infinite;
+	-webkit-animation-duration: 70s;	
 }
 
 @keyframes cloud2 {
+	0%{
+		left: 2000px;
+	}
+	100%{
+		left: -500px;
+	}
+}
+@-webkit-keyframes cloud2 {
 	0%{
 		left: 2000px;
 	}
@@ -198,7 +217,8 @@
 	top: 500px;
 	animation: cloud3 infinite;
 	animation-duration: 70s;	
-
+	-webkit-animation: cloud3 infinite;
+	-webkit-animation-duration: 70s;	
 }
 
 @keyframes cloud3 {
@@ -209,3 +229,33 @@
 		left: -500px;
 	}
 }
+@-webkit-keyframes cloud3 {
+	0%{
+		left: 1500px;
+	}
+	100%{
+		left: -500px;
+	}
+}
+
+
+
+/* titleキャラポップ
+/*-----------------------------------*/
+
+/*
+.mainimgbox>img:first-child {
+	width: 250px;
+	border: 1px red solid;
+}
+
+.mainimgbox>img:nth-child(2){
+	width: 450px;
+	height: 500px;
+	border: 1px blue solid;
+}
+.mainimgbox>img:nth-child(3){
+	width: 250px;
+	border: 1px green solid;
+}
+*/

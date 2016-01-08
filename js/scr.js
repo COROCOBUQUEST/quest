@@ -9,7 +9,6 @@ $(function(){
 	var chara2 = $('#chara2').offset().top;
 	var chara3 = $('#chara3').offset().top;
 
-
 //右上のスクロール値を計って表示するやつ（あとで消す）/////
 	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
 	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});

@@ -20,6 +20,12 @@ if(sWidth>=700){
 	alert('ちっさい');
 }
 
+//キャラポップ用classつける
+
+$('.mainimgbox>img:first-child').addClass('');
+$('.mainimgbox>img:nth-child(2)').addClass('');
+$('.mainimgbox>img:nth-child(3)').addclass('');
+
 
 
 

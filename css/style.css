@@ -161,25 +161,34 @@ header {
 .topunder {
 	width: 80%;
 	margin: 0 auto;
+	background: pink;
 }
 
 /******更新履歴と動画(画像)ソフト情報入れ***********/
-.tpibox{
+.tpibox:first-child {
+	width: 65%;
+	background: red;
 	padding: 10px;
 	float: left;
 }
 
+.tpibox:last-child {
+	width: 32%;
+	margin-top: 20px;
+	float: right;
+	background: aqua;	
+}
+
 /******phpで更新履歴のとこ***********/
 .uphistory {
-	width: 38%;
+	width: 100%;
 	height: 70px;
-	padding: 10px;
 	background-color: rgba(124, 207, 255,0.5);
 }
 
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
-	margin: 10px;
+	margin: 5px;
 }
 
 /*******ソフト情報の箱*********/
@@ -187,6 +196,13 @@ header {
 	padding: 10px 0;
 }
 
+.softimg,.tpibox ul {
+	float: left;
+}
+
+.tpibox ul {
+	margin: 55px 10px;
+}
 /******メイン全体を入れてる箱*******/
 .maincontent {
 	width: 100%;
@@ -290,6 +306,7 @@ footer {
 	width: 100%;
 	background: gold;
 	padding: 10px;
+	text-align: center;
 }
 
 .f-icon {
@@ -304,5 +321,4 @@ footer {
 .copyright {
 	display: inline;
 	font-size: small;
-	text-align: center;
 }
