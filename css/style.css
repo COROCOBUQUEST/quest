@@ -13,6 +13,12 @@ html,body {
 	box-sizing:border-box;
 }
 
+html,body,h1,h2,h3,
+p,ul,li,dl,dt,dd,a {
+	margin: 0;
+	padding: 0;
+}
+
 h1,h2,h3 {
 	font-family: 'Droid Serif', serif;
 }
@@ -27,9 +33,11 @@ ul li {
 	list-style-type: none;
 }
 
+p {
+	display: inline-block;
+}
+
 body {
-	margin: 0;
-	padding: 0;
 	overflow-x: hidden;
 }
 
@@ -135,7 +143,6 @@ header {
 .sale {
 	width: 400px;
 	height: 60px;
-	display: inline-block;
 	position: absolute;
 	top: 40%;
 	left: 18%;
@@ -155,12 +162,12 @@ header {
 /******topのしたのくくってるとこ箱***********/
 .topunder {
 	width: 100%;
-	margin: 0;
 }
 
 /******更新履歴と動画(画像)ソフト情報入れ***********/
 .tpibox{
 	margin: 0 calc( 50% / 5 );
+	padding: 10px;
 	float: left;
 }
 
@@ -168,38 +175,18 @@ header {
 .uphistory {
 	width: 38%;
 	height: 70px;
-	margin: 0;
 	padding: 10px;
 	background-color: rgba(124, 207, 255,0.5);
 }
 
-.tpibox h3 {
-	margin: 0;
-	padding: 0;
-}
-
-.uphistory dt {
-	margin: 0;
-}
-
-.uphistory dt dd{
-	margin: 0;
-}
-
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
-	display: inline-block;
+	margin: 10px;
 }
 
 /*******ソフト情報の箱*********/
 .softimg {
-	margin: 0;
-	padding: 0;
-}
-
-.tpibox ul {
-	margin: 10px;
-	padding: 10px;
+	padding: 10px 0;
 }
 
 /******メイン全体を入れてる箱*******/
@@ -317,6 +304,7 @@ footer {
 }
 
 .copyright {
+	display: inline;
 	font-size: small;
 	text-align: center;
 }
