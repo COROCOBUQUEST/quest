@@ -129,7 +129,7 @@ header {
 	bottom: -5%;*/
 }
 #box_height {
-	height: 150px;
+	height: 100px;
 	position: relative;
 	top: -50px;
 }
@@ -159,12 +159,12 @@ header {
 
 /******topのしたのくくってるとこ箱***********/
 .topunder {
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 /******更新履歴と動画(画像)ソフト情報入れ***********/
 .tpibox{
-	margin: 0 calc( 50% / 5 );
 	padding: 10px;
 	float: left;
 }

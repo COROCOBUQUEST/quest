@@ -108,6 +108,17 @@
 		opacity: 1;
 	}
 }
+@-webkit-keyframes charabox_pop {
+	0%{
+		transform: translate(0px,50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px,0px);
+		opacity: 1;
+	}
+}
+
  /* キャラコンテンツ遅延アニメ分 */
  
 .js_chara_default {
@@ -120,6 +131,16 @@
 }
 
 @keyframes chara_pop {
+	0%{
+		transform: translate(0px,10px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px,0px);
+		opacity: 1;
+	}
+}
+@-webkit-keyframes chara_pop {
 	0%{
 		transform: translate(0px,10px);
 		opacity: 0;
