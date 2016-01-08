@@ -37,6 +37,10 @@ p {
 	display: inline-block;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	overflow-x: hidden;
 }
@@ -61,18 +65,10 @@ nav {
 	left: 0;
 }
 
-nav ul {
-	padding: 5px 20px;
-}
-
 nav ul li{
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;
 	margin: 5px;
-}
-
-nav ul li a {
-	text-decoration: none;
 }
 
 /*******ヘッダー*********/
@@ -104,7 +100,6 @@ header {
 .mainimgbox {
 	width: 80%;
 	height: 500px;
-	padding: 0;
 	margin: 10px auto 0;
 	background-color: aqua;
 }
@@ -142,7 +137,7 @@ header {
 	width: 400px;
 	height: 60px;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 18%;
 	background: green;
 	z-index: 100;
@@ -160,7 +155,7 @@ header {
 /******topのしたのくくってるとこ箱***********/
 .topunder {
 	width: 80%;
-	margin: 0 auto;
+	margin: 20px auto;
 	background: pink;
 }
 

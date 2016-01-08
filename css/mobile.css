@@ -1,2 +1,19 @@
 @charset "UTF-8";
-
+/*タブレット用*/
+@media screen and (max-width:700px){
+	/*nav*/
+	nav {
+		height: 100px;
+	}
+	nav ul li {
+		font-size: 1.5em;
+		float: left;
+	}
+	/*キャラクターがふわっとしゅっと*/
+	
+}
+/*スマホ用*/
+@media screen and (max-width:400px){
+	nav {background: blue;}
+	
+}
