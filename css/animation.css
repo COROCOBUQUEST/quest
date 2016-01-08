@@ -27,6 +27,7 @@
 	cursor: pointer;
 	position: relative;
 	left: 200px;
+	border: 1px solid #333;
 }
 
 .js_bookmark_off {
@@ -61,7 +62,7 @@
 }
 
 
-/* スクロールでふわっと出現
+/* 【コンテンツボックス】スクロールでふわっと出現
 /*-----------------------------------*/
 #boxA,#boxB,#boxC {
 	opacity: 0;
@@ -78,6 +79,53 @@
 		opacity: 0;
 	}
 	100%{
+		opacity: 1;
+	}
+}
+
+/* 【キャラボックス】スクロールでふわっと出現
+/*-----------------------------------*/
+
+#boxA,#boxB,#boxC {
+	position: relative;
+}
+.js_charabox_default {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+}
+.js_charabox_anime {
+	animation: charabox_pop 1s;
+}
+
+@keyframes charabox_pop {
+	0%{
+		transform: translate(0px,50px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px,0px);
+		opacity: 1;
+	}
+}
+ /* キャラコンテンツ遅延アニメ分 */
+ 
+.js_chara_default {
+	position: relative;
+	top: 10px;
+	opacity: 0;
+}
+.js_chara_anime {
+	animation: charabox_pop 1s;
+}
+
+@keyframes chara_pop {
+	0%{
+		transform: translate(0px,10px);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(0px,0px);
 		opacity: 1;
 	}
 }
