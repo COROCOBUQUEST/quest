@@ -13,6 +13,20 @@ html,body {
 	box-sizing:border-box;
 }
 
+h1,h2,h3 {
+	font-family: 'Droid Serif', serif;
+}
+
+p,li,dd, {
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 1.6
+}
+
+ul li {
+	list-style-type: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -46,7 +60,6 @@ nav ul {
 }
 
 nav ul li{
-	list-style-type: none;
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;
 	margin: 5px;
@@ -69,7 +82,7 @@ header {
 
 .headrogo {
 	width: 100%;
-	height: 70px;
+	height: 54px;
 	margin: 0;
 	padding: 0;
 	text-align: right;
@@ -78,7 +91,7 @@ header {
 }
 
 .headrogo img {
-	margin: 10px;
+	margin: 2px 5px;
 }
 
 /*******キャラクターがふわっとしゅっと*********/
@@ -133,66 +146,60 @@ header {
 /*******小さい箱でお知らせ*********/
 .newstpics {
 	margin: 10%;
-	border: solid 1px #111;
 	position: absolute;
+	top: 5%;
+	right: -10%;
 	z-index: 102;
 }
 
-.newstpics ul li {
-	list-style-type: none;
+/******topのしたのくくってるとこ箱***********/
+.topunder {
+	width: 100%;
+	margin: 0;
+}
+
+/******更新履歴と動画(画像)ソフト情報入れ***********/
+.tpibox{
+	margin: 0 calc( 50% / 5 );
+	float: left;
 }
 
 /******phpで更新履歴のとこ***********/
 .uphistory {
-	width: 40%;
+	width: 38%;
 	height: 70px;
+	margin: 0;
 	padding: 10px;
 	background-color: rgba(124, 207, 255,0.5);
 }
 
-.ups-h{
+.tpibox h3 {
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 
-.uphistory dl {
-	margin: 0 10px;
-	padding: 0;
-}
-
-.uphistory dl dt {
+.uphistory dt {
 	margin: 0;
 }
 
-.uphistory dl dt dd{
+.uphistory dt dd{
 	margin: 0;
+}
+
+/*******更新履歴の下の動画（画像）*********/
+.topmovei {
+	display: inline-block;
 }
 
 /*******ソフト情報の箱*********/
-.softbox {
-	width: 80%;
-}
-
 .softimg {
 	margin: 0;
 	padding: 0;
 }
 
-.np2-1 {
+.tpibox ul {
 	margin: 10px;
 	padding: 10px;
-}
-
-.np2-1 li {
-	list-style-type: none;
-}
-	
-.topc2 {
-	width: 50%;
-	border: solid 1px #333;
-	padding: 10px;
-	margin: 30px;
 }
 
 /******メイン全体を入れてる箱*******/
@@ -248,9 +255,8 @@ header {
 	background-position: center;
 }
 
-.cname-h {
+.crbox h3 {
 	font-size: 2em;
-	font-family: 'Droid Serif', serif;
 	margin: 10px;
 }
 
@@ -299,6 +305,15 @@ footer {
 	width: 100%;
 	background: gold;
 	padding: 10px;
+}
+
+.f-icon {
+	width: 300px;
+	margin: 10px auto;
+}
+
+.f-icon a {
+	margin: 0 calc( 30% / 4 );
 }
 
 .copyright {
