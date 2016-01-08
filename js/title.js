@@ -17,15 +17,33 @@ if(sWidth>=700){
 	},1000);
 
 }else{
-//	alert('ちっさい');
+
+	//alert('ちっさい');
 }
 
-//キャラポップ用classつける
+if(sWidth<=400){
+	$('nav').css({left:'-500px'});
+	$('#container').before('<p id="navbutton">●</p>');
+	$('#navbutton').css({position:'fixed',left:'10px',top:'10px',zIndex:'15000',cursor:'pointer'});
 
+	var flug = true;
+	$('#navbutton').click(function(){
+		if(flug == true){
+			$('nav').animate({left:'0px'},1000);
+		}else{
+			$('nav').animate({left:'-500px'},1000);
+		}
+		flug = !flug;
+	});
+}//if400
+
+	
+//キャラポップ用classつける
+/*
 $('.mainimgbox>img:first-child').addClass('');
 $('.mainimgbox>img:nth-child(2)').addClass('');
 $('.mainimgbox>img:nth-child(3)').addclass('');
-
+*/
 
 
 
