@@ -23,10 +23,10 @@ $(function(){
 	var flug = true;
 	$('#bookmark').click(function(){
 		if(flug == true){
-			$('#global_menu').animate({left:'-200px'},500,'swing');
+			$('#global_menu').animate({left:'-200px'},500,'swing').addClass('nav_off').removeClass('nav_on');
 				bkm = 50;
 		}else{
-			$('#global_menu').animate({left:'0px'},500,'swing');
+			$('#global_menu').animate({left:'0px'},500,'swing').addClass('nav_on').removeClass('nav_off');
 			bkm = 200;
 		}
 		flug = !flug;//flugの中に入っているboolianをひっくり返す
@@ -64,17 +64,16 @@ $(function(){
 		}else{
 			$('#goTop').fadeOut(800);
 		}
-		
+//スクロールでナビ片付ける
 	var bkm = $('#bookmark').offset().left;
-		if(scrlcount>=1000){
-			if(bkm>=150){
-				$('#global_menu').addClass('js_bookmark_off').addClass('nav_off');
-			}else{
-				$('#global_menu').addClass('js_bookmark_on').addClass('nav_on');
-			}
+		if(scrlcount>=1000 && $('nav').hasClass('nav_on')){
+			$('#global_menu').addClass('js_bookmark_off').removeClass('nav_on').addClass('nav_off');
 		}
-
-	});
+		if(scrlcount<=1000 && $('nav').hasClass('nav_off')){
+			$('#global_menu').addClass('js_bookmark_on').removeClass('nav_off').addClass('nav_on');
+		}
+		
+	});//スクロール
 
 //Nav・メニュータイトルクリックでスクロールリンク
 	$('#nav_story').click(function(){
