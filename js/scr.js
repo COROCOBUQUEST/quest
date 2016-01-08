@@ -9,6 +9,13 @@ $(function(){
 	var chara2 = $('#chara2').offset().top;
 	var chara3 = $('#chara3').offset().top;
 
+//画面幅
+	var sWidth = 0;
+	sWidth = window.innerWidth;
+//それを表示する（後で消す）/////
+	$('#container').prepend('<p id="wlikid">横幅'+sWidth+'</p>');
+	$('#wlikid').css({position:'fixed',top:'20px',right:'0',zIndex:'500'});
+
 //右上のスクロール値を計って表示するやつ（あとで消す）/////
 	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
 	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});
@@ -128,7 +135,7 @@ $(function(){
 			$('#goTop').fadeOut(800);
 		}
 //スクロールでナビ片付ける
-		if(scrlcount>=1000 && bkm>=150){
+		if(scrlcount>=1000 && bkm>=150 && sWidth>400){
 			$('#global_menu').addClass('js_bookmark_off').css({left:'-200px'});
 			bkm = 50;
 		}
