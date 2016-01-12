@@ -48,7 +48,10 @@ body {
 #bg_img {
 	position: relative;
 	z-index: 1;
-	background: steelblue;
+	background-image: url("../img/bgimg01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #container {
@@ -97,7 +100,7 @@ header {
 	padding: 0;
 	text-align: right;
 	display: block;
-	background-color: blue;
+	background-color: rgba(124, 207, 255,0.5);;
 }
 
 .headrogo img {
@@ -163,7 +166,7 @@ header {
 /******topのしたのくくってるとこ箱***********/
 .topunder {
 	width: 80%;
-	margin: 20px auto;
+	margin: 20px auto 0;
 	background: pink;
 }
 
@@ -191,6 +194,7 @@ header {
 
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
+	width: 100%;
 	margin: 5px;
 }
 
@@ -209,7 +213,6 @@ header {
 /******メイン全体を入れてる箱*******/
 .maincontent {
 	width: 100%;
-	background-color: gold;
 	margin: 0 auto;
 }
 
@@ -225,38 +228,35 @@ header {
 
 /******STORYの中箱*******/
 .st-img {
-	width:100%%;
+	width:100%;
 	height: 800px;
 	margin: 10px;
 	background-image: url("../img/storyimg01.png");
 	background-repeat: no-repeat;
 	background-position: 20% center;
+	text-align: right;
 }
 
 .st-p {
 	width: 30%;
 	height: 50%;
 	margin: 30px;
+	padding: 5px;
 	border: solid 1px #222;
 	display: inline-block;
-	float:right;
+	text-align: center;
 }
 
 /******CHARACTER*******/
-.maininner:nth-child(2) {
-	background-color: orange;
-}
 
 .crbox {
 	width: 80%;
-	height: 550px;
-	margin: 20px 12%;
-	padding: 0;
-	border: solid 1px #444;
+	margin: 15px 10%;
 	display: inline-block;
 	background-image: url("http://placehold.jp/300x400.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	border: solid 1px #000;
 }
 
 .crbox h3 {
@@ -264,34 +264,24 @@ header {
 	margin: 10px;
 }
 
-.cname-h:nth-child(2){
-	color: red;
-}
-
 .cr-p {
-	width: 220px;
-	height: 300px;
+	width: 26%;
+	height: 50%;
+	margin: 10px;
 	padding: 6px;
 	border: solid 1px #333;
 	display: inline-block;
 	background-color: rgba(255,255,255,0.5);
-	position: relative;
-	left: 70%;
-	top: 25%;
+	float: right;
 }
 
 .cr-pvimg {
+	margin: 25% 10px 10px;
 	border: solid 2px #1D2E82;
-	position: relative;
-	right: 20%;
-	top: 5%;
+	float: left;
 }
 
 /******ITEM*******/
-.maininner:nth-child(3) {
-	background-color: blue;
-}
-
 .itemp {
 	width: 330px;
 	height: 300px;
@@ -307,9 +297,9 @@ header {
 /*********フッター************/
 footer {
 	width: 100%;
-	background: gold;
 	padding: 10px;
 	text-align: center;
+	background-color: rgba(124, 207, 255,0.5);;
 }
 
 .f-icon {

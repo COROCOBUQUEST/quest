@@ -1,18 +1,23 @@
 @charset "UTF-8";
 /*タブレット用*/
 @media screen and (max-width:700px){
-	/*nav*/
+/*nav*/
 	nav {
+		width: 300px;
 		height: 100px;
+		background-position: -10% 110%;
+		background-repeat: no-repeat;
+	}
+	nav ul {
+		transform: none;
+		padding: 0;
 	}
 	nav ul li {
-		font-size: 1.5em;
+		margin: 5px;
+		font-size: 1.3em;
 		float: left;
 	}
-	/*キャラクターがふわっとしゅっと*/
-	.mainimgbox img:nth-child(-n+3) {
-		visibility: hidden;
-	}
+/*キャラクターがふわっとしゅっと*/
 	.newstpics img {
 		visibility: visible;
 	}
@@ -20,10 +25,138 @@
 		width: 100%;
 		background: tomato;
 	}
-	
+	.mainimgbox img:nth-child(-n+3) {
+		visibility: hidden;
+	}
+	.sale {
+		width: 350px;
+		height: 40px;
+		top: 42%;
+	}
+/*******タイトル*********/	
+	.h1-title{
+		width: 95%;
+	}
+	/*******小さい箱でお知らせ*********/
+	.newstpics {
+		width: 100%;
+		top: 55%;
+		left: 5%;
+		margin: 0;
+	}
+	.newstpics ul {
+		width: 30%;
+		margin: 0 5px;
+		padding: 0;
+		float: left;
+		background: green;
+	}
+	.newstpics ul li {
+		margin: 5px;
+	}
+/******topのしたのくくってるとこ箱***********/
+	.topunder {
+		width: 100%;
+		margin-top: 120px;
+	}
+	/******更新履歴と動画(画像)ソフト情報入れ***********/
+	.tpibox:first-child {
+		padding: 0;
+	}
+	.tpibox:last-child {
+		margin-top: 0;	
+	}
+	/******phpで更新履歴のとこ***********/
+	.uphistory {
+		margin-left: 5px;
+	}
+	/*******ソフト情報の箱*********/
+	.softimg {
+		padding: 25px 0 0 10px;
+	}
+	.tpibox ul {
+		margin: 10px 10px;
+	}
+/******STORYの中箱*******/
+	.st-img {
+		width:100%;
+		height: 800px;
+		margin: 10px;
+		text-align: center;
+		background-size: contain;
+	}
+	.st-p {
+		width: 60%;
+		height: 40%;
+		margin-top: 200px;
+		border: solid 1px #222;
+	}
+/******CHARACTER*******/
+	.crbox {
+		width: 100%;
+		background-position: 10% 80%;
+		margin: 0;
+		}
+	.cr-p {
+		width: 30%;
+		margin: 10px;
+	}
+	.cr-pvimg {
+		margin: 0 10px 10px 230px;
+		float: right;
+	}
 }
+
 /*スマホ用*/
 @media screen and (max-width:400px){
-	nav {background: blue;}
-	
+	.sale {
+		width: 250px;
+		height: 35px;
+		top: 30%;
+	}
+/*******小さい箱でお知らせ*********/
+	.newstpics {
+		width: 100%;
+		top: 42%;
+		left: 1%;
+	}
+	/******更新履歴と動画(画像)ソフト情報入れ***********/
+	.tpibox:first-child, .tpibox:last-child {
+		width: 100%;
+		float: none;
+	}
+	/******phpで更新履歴のとこ***********/
+	.uphistory {
+		width: 100%;
+		height: 40px;
+		margin: 0;
+	}
+	/*******更新履歴の下の動画（画像）*********/
+	.topmovei img{
+		width: 70%;
+		margin: 0 auto;
+	}
+	/*******ソフト情報の箱*********/
+	.softimg {
+		padding: 5px;
+	}
+	.tpibox ul {
+		margin: 50px 0 0 20px;
+	}
+	/******STORYの中箱*******/
+	.st-img {
+		height: 100%;
+		padding: 20px;
+		margin: 10px;
+		background-size: 70%;
+	}
+	/******CHARACTER*******/
+	.crbox {
+		background-position: 10%;
+		background-size: 70%;
+	}
+	.cr-p {
+		width: 80%;
+		margin: 50% 10px ;
+	}
 }
