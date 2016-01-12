@@ -5,8 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <title>COROCOBUQUEST|公式サイト</title>
 <link type="text/css" rel="stylesheet" href="./css/style.css">
-<link type="text/css" rel="stylesheet" href="./css/animation.css">
 <link type="text/css" rel="stylesheet" href="./css/mobile.css">
+<link type="text/css" rel="stylesheet" href="./css/title_chara.css">
+<link type="text/css" rel="stylesheet" href="./css/animation.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -40,11 +41,11 @@
 			<p class="headrogo"><img src="http://placehold.jp/50x50.png"></p>
 				<!--キャラクターがふわっとしゅっと-->
 				<div class="mainimgbox">
-					<img src="http://placehold.jp/250x400.png">
-					<img src="http://placehold.jp/300x500.png">
-					<img src="http://placehold.jp/250x400.png">
+					<img src="http://placehold.jp/300x500.png" id="left_chara">
+					<img src="http://placehold.jp/400x600.png">
+					<img src="http://placehold.jp/300x500.png" id="right_chara">
 		<!---------小さい箱でお知らせ-------------------------------------------------->
-					<div class="newstpics">
+					<div id="newsslide" class="newstpics">
 						<ul>
 							<li><img src="http://placehold.jp/160x80.png"></li>
 							<li>ツイッターフォローキャンペーン開催中！</li>
@@ -123,20 +124,22 @@
 				
 			</div><!--chara終わり-->
 	<!--------ITEM------------------------------------------------------>
-			<div id="boxC" class="maininner clearfix">
+			<div id="boxC" class="maininner">
 				<h2>ITEM</h2>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item1item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item2item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item3item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item4item1item1item1</p>
+				<div class="item_box clearfix">
+					<p class="itemp"><img src="http://placehold.jp/300x200.png">item1item1item1item1</p>
+					<p class="itemp"><img src="http://placehold.jp/300x200.png">item2item1item1item1</p>
+					<p class="itemp"><img src="http://placehold.jp/300x200.png">item3item1item1item1</p>
+					<p class="itemp"><img src="http://placehold.jp/300x200.png">item4item1item1item1</p>
+				</div>
 			</div><!--ITEM終わり-->
 		</div>
 	<!--------footer------------------------------------------------------>
 		<footer>
 			<div class="f-icon">
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
+				<a href="#"><img src="./img/icons/Twitter.png"></a>
+				<a href="#"><img src="./img/icons/Facebook.png"></a>
+				<a href="#"><img src="./img/icons/Line.png"></a>
 			</div>
 			<p class="copyright">&copy;&nbsp;2016&nbsp;YUKIYA/COROCOBUQUEST&nbsp;Project/Nantendo/Suny Entertainment Inc.&nbsp;All Rights Reserved.</p>
 		</footer>

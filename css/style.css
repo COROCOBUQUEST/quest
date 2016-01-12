@@ -107,7 +107,7 @@ header {
 /*******キャラクターがふわっとしゅっと*********/
 .mainimgbox {
 	width: 80%;
-	height: 500px;
+	height: 600px;
 	margin: 10px auto 0;
 	background-color: aqua;
 }
@@ -121,6 +121,7 @@ header {
 	background: url(http://placehold.jp/670x150.png) no-repeat;
 	background-size: cover;
 	background-position: center;
+	border: 1px #333 solid;
 	/*top: 500px;
 	left: calc(50% - 330px);
 	height: 10%;
@@ -134,7 +135,7 @@ header {
 #box_height {
 	height: 100px;
 	position: relative;
-	top: -50px;
+	top: -80px;
 }
 .h1-title img {
 	width: 670px;
@@ -153,17 +154,26 @@ header {
 
 /*******小さい箱でお知らせ*********/
 .newstpics {
-	margin: 10%;
+	margin-right: 10%;
 	position: absolute;
 	top: 5%;
-	right: -10%;
+	right: -15%;
+	text-align: right;
+	font-size: 0.8em;
 	z-index: 102;
+}
+
+.newstpics ul {
+	margin-top: 13px;
+}
+.newstpics ul:first-child {
+	margin-top: 0px;
 }
 
 /******topのしたのくくってるとこ箱***********/
 .topunder {
 	width: 80%;
-	margin: 20px auto;
+	margin: -10px auto 20px;
 	background: pink;
 }
 
@@ -289,18 +299,27 @@ header {
 
 /******ITEM*******/
 .maininner:nth-child(3) {
+	padding-bottom: 20px;
 	background-color: blue;
 }
-
+.item_box {
+	width: calc((334px * 2) + 80px);
+	margin-left: 30%;	
+}
 .itemp {
 	width: 330px;
 	height: 300px;
-	margin: 30px 70px ;
 	border: solid 1px #555;
 	display: inline-block;
 	float: left;
 }
-
+.itemp:nth-child(2n+1) {
+	margin-top: 30px;
+}
+.itemp:nth-child(2n) {
+	margin-top: 30px;
+	margin-left: 80px;
+}
 .itemp img {
 	margin: 3px;
 }
@@ -316,7 +335,10 @@ footer {
 	width: 300px;
 	margin: 10px auto;
 }
-
+.f-icon img {
+	width: 50px;
+	height: 50px;
+}
 .f-icon a {
 	margin: 0 calc( 30% / 4 );
 }

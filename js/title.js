@@ -15,8 +15,8 @@ if(sWidth>=700){
 	});
 
 	setTimeout(function(){
-			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},800,'easeInOutCirc');
-	},1000);
+			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1300,'easeInOutElastic');
+	},2000);
 
 }else{
 
@@ -41,11 +41,22 @@ if(sWidth<=400){
 
 	
 //キャラポップ用classつける
-/*
-$('.mainimgbox>img:first-child').addClass('');
-$('.mainimgbox>img:nth-child(2)').addClass('');
-$('.mainimgbox>img:nth-child(3)').addclass('');
-*/
+
+
+$('#left_chara').addClass('hide');
+$('#right_chara').addClass('hide');
+$('#newsslide').addClass('slide_before');
+
+setTimeout(function(){
+	$('#left_chara').removeClass('hide').addClass('left_chara').addClass('view');
+},1000);	
+setTimeout(function(){
+	$('#right_chara').removeClass('hide').addClass('right_chara').addClass('view');
+},1500);
+setTimeout(function(){
+	$('#newsslide').removeClass('slide_before').addClass('slide_in');
+},4000);
+
 
 //タイム計測終了
 console.timeEnd('timePush');
