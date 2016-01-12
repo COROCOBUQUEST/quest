@@ -340,3 +340,21 @@ nav {
 			right: -15%;
 	}
 }
+
+/*--4016年発売決定！--*/
+
+#menu1 {
+	position: relative;
+}
+
+#menu1>h2 {
+	position: relative;
+	top: -200px;
+	transform: rotate(-6deg);
+	animation: onsaleboyan 3s;
+}
+
+@keyframes onsaleboyan {
+	0%{filter: blur(30px);}
+	100%{filter: blur(0px);}
+}
