@@ -1,4 +1,6 @@
 $(function(){
+//タイム計測
+console.time('timePush');
 
 //スクリーンサイズ取得
 	var sWidth = 0;
@@ -13,7 +15,7 @@ if(sWidth>=700){
 	});
 
 	setTimeout(function(){
-			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1500,'easeOutElastic');
+			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},800,'easeInOutCirc');
 	},1000);
 
 }else{
@@ -45,7 +47,8 @@ $('.mainimgbox>img:nth-child(2)').addClass('');
 $('.mainimgbox>img:nth-child(3)').addclass('');
 */
 
-
+//タイム計測終了
+console.timeEnd('timePush');
 
 
 
