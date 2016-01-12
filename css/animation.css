@@ -247,19 +247,96 @@ nav {
 /* titleキャラポップ
 /*-----------------------------------*/
 
-/*
-.mainimgbox>img:first-child {
-	width: 250px;
-	border: 1px red solid;
+.hide {
+	display: none;
+	opacity: 0;
+}
+.view {
+	display: block;
+	opacity: 1;
 }
 
+/*--左のキャラ--*/
+
+.left_chara {
+	animation: left_anime 0.5s;
+}
+
+@keyframes left_anime {
+	0%{
+		left: 60px;
+		bottom: -7px;
+		display: none;
+		opacity: 0;
+	}
+	1%{
+		left: 60px;
+		bottom: -7px;
+		display: block;
+		opacity: 0;
+	}
+	100%{
+		left: 30px;
+		bottom: 0px;
+		display: block;
+		opacity: 1;
+	}
+}
+
+/*--真ん中のキャラ--*/
 .mainimgbox>img:nth-child(2){
-	width: 450px;
-	height: 500px;
-	border: 1px blue solid;
+	animation: center_chara 1s;
 }
-.mainimgbox>img:nth-child(3){
-	width: 250px;
-	border: 1px green solid;
+@keyframes center_chara {
+	0%{
+		bottom: 10px;
+	}
+	100%{
+		bottom: 0px;
+	}
 }
-*/
+
+/*--右のキャラ--*/
+
+
+.right_chara {
+	animation: right_anime 0.5s;
+}
+@keyframes right_anime {
+	0%{
+		left: 600px;
+		bottom: -7px;
+		display: none;
+		opacity: 0;
+	}
+	1%{
+		left: 600px;
+		bottom: -7px;
+		display: block;
+		opacity: 0;
+	}
+	100%{
+		left: 630px;
+		bottom: 0px;
+		display: block;
+		opacity: 1;
+	}
+}
+
+/*--右のニュースボックス--*/
+.slide_before {
+	position: relative;
+	right: -500px;
+
+}
+.slide_in {
+	animation: news_box 0.5s;
+}
+@keyframes news_box {
+	0%{
+		right: -500px;
+	}
+	100%{
+			right: -15%;
+	}
+}

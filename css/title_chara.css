@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.mainimgbox {
+	position: relative;
+}
+.mainimgbox img{
+	border: 1px solid #333;
+}
+.mainimgbox>img:first-child {
+	position: absolute;
+	left: 30px;
+	bottom: 0;
+	z-index: 50;
+}
+
+.mainimgbox>img:nth-child(2) {
+	position: absolute;
+	left: 280px;
+	bottom: 0;
+	z-index: 80;
+}
+
+.mainimgbox>img:nth-child(3) {
+	position: absolute;
+	left: 630px;
+	bottom: 0;
+	z-index: 50;
+}
+
+#box_height {
+	z-index: 10000;
+}
