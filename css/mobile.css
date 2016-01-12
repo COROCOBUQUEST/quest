@@ -105,6 +105,20 @@
 		margin: 0 10px 10px 230px;
 		float: right;
 	}
+	/******ITEM*******/
+	.item_box {
+		width: 100%;
+		padding: 0;
+		margin: 10px auto;
+	}
+	.itemp:nth-child(2n+1) {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+	.itemp:nth-child(2n) {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
 }
 
 /*スマホ用*/
@@ -152,11 +166,14 @@
 	}
 	/******CHARACTER*******/
 	.crbox {
-		background-position: 10%;
+		background-position: center 0;
 		background-size: 70%;
 	}
 	.cr-p {
 		width: 80%;
-		margin: 50% 10px ;
+		margin: 80% 30px 10px;
+	}
+	.cr-pvimg {
+		margin: 0 60px 10px 230px;
 	}
 }

@@ -295,7 +295,6 @@ header {
 
 .maininner:nth-child(3) {
 	padding-bottom: 20px;
-	background-color: blue;
 }
 .item_box {
 	width: calc((334px * 2) + 80px);
