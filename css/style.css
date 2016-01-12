@@ -58,17 +58,25 @@ body {
 }
 /*******nav*********/
 nav {
-	border: solid 2px #000;
+	width: 300px;
 	display: inline-block;
 	position: fixed;
 	top: 0;
 	left: 0;
+	background-image: url("../img/nav.png");
+	background-position: 95% 50%;
+	background-size: cover;
+}
+
+nav ul {
+	transform: rotate(-4deg);
+	padding: 0 0 0 25px;
+	margin: 0;
 }
 
 nav ul li{
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;
-	margin: 5px;
 }
 
 /*******ヘッダー*********/
