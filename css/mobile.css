@@ -16,6 +16,9 @@
 		font-size: 1.3em;
 		float: left;
 	}
+	.h1-title {
+		width: 100%;
+	}
 /*キャラクターがふわっとしゅっと*/
 	.newstpics img {
 		visibility: visible;
