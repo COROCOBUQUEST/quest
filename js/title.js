@@ -2,6 +2,10 @@ $(function(){
 //タイム計測
 console.time('timePush');
 
+jQuery(window).load(function(){
+	jQuery('#loading').hide();
+});
+
 //スクリーンサイズ取得
 	var sWidth = 0;
 	sWidth = window.innerWidth;
@@ -14,6 +18,9 @@ if(sWidth>=700){
 		opacity:'0'
 	});
 
+	//ロードした時、ナビの準備
+	$('#global_menu').css({position:'absolute',left:'-400px',top:'-200px'});
+
 	$('.sale').css({background:'none',width:'500px'});
 	$('#menu1').find('h2').css({
 		color:'#fff',
@@ -21,15 +28,16 @@ if(sWidth>=700){
 	});
 
 	setTimeout(function(){
-			$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1300,'easeInOutElastic');
+		$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1300,'easeInOutElastic');
 	},2000);
-
+	setTimeout(function(){
+		$('#global_menu').animate({left:'0',top:'0'},1500);
+	},4000);
+	
 }
 
 
-	
 //キャラポップ用classつける
-
 
 $('#left_chara').addClass('hide');
 $('#right_chara').addClass('hide');

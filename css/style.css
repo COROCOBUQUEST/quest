@@ -118,7 +118,8 @@ header {
 }
 
 .headrogo img {
-	margin: 2px 5px;
+	margin: 7px 15px;
+	height: 40px;
 }
 
 /*******キャラクターがふわっとしゅっと*********/
@@ -216,12 +217,7 @@ header {
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
 	width: 250px;
-}
-.topmovei:first-child {
-	margin: 15px 0 7px 10%;
-}
-.topmovei:last-child {
-	margin: 15px 10% 7px 7px;
+	margin: 10px 3%;
 }
 
 /*******ソフト情報の箱*********/
@@ -282,11 +278,12 @@ header {
 	background-position: center;
 }
 
-.crbox:first-child {
+.crbox:nth-child(2) {
 	background-image: url("../img/character/chara03.png");
+	background-position: top;
 }
 
-.crbox:nth-child(2) {
+.crbox:nth-child(3) {
 	background-image: url("../img/character/chara02.png");
 }
 

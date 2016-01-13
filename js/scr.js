@@ -85,7 +85,7 @@ $(function(){
 		if(scrlcount>=(charaTop-800)){
 			$('#boxB').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(itemTop-800)){
+		if(scrlcount>=(itemTop-600)){
 			$('#boxC').addClass('js_fadein').css({opacity:'1'});
 		}
 
@@ -135,7 +135,7 @@ $(function(){
 			$('#goTop').fadeOut(800);
 		}
 //スクロールでナビ片付ける
-		if(scrlcount>=1000 && bkm>=150 && sWidth>400){
+		if(scrlcount>=900 && bkm>=150 && sWidth>400){
 			$('#global_menu').addClass('js_bookmark_off').css({left:'-200px'});
 			bkm = 50;
 		}
