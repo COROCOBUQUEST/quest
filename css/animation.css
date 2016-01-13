@@ -382,3 +382,18 @@ nav {
 	0%{filter: blur(30px);}
 	100%{filter: blur(0px);}
 }
+
+/* Now loading
+/*-----------------------------------*/
+
+html,body {height: 100%;}
+#loading {
+	height: 100%;
+	padding-top: 30%;
+	background: tan;
+	position: relative;
+	z-index: 15000;
+	font-size: 4em;
+	color: rgba(255,255,255,0.7);
+	text-align: center;
+}

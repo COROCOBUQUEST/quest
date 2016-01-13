@@ -22,7 +22,7 @@ $(function(){
 		$('#navbutton,#cross').show();
 	}else{
 		$('nav').css({left:'0px'});
-		$('#navbutton').hide();
+		$('#navbutton,#cross').hide();
 	}
 
 	$('#navbutton').click(function(){

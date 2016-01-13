@@ -2,6 +2,10 @@ $(function(){
 //タイム計測
 console.time('timePush');
 
+jQuery(window).load(function(){
+	jQuery('#loading').hide();
+});
+
 //スクリーンサイズ取得
 	var sWidth = 0;
 	sWidth = window.innerWidth;
