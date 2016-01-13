@@ -72,15 +72,26 @@ nav {
 /* NAV・400px以下のマーク
 /*-----------------------------------*/
 
+#navbutton,#cross {
+	z-index: 15000;
+	font-size: 2em;
+	cursor: pointer;
+	color: #7f673e;
+	opacity: 0.8;
+}
 #navbutton {
 	position: fixed;
 	left: 12px;
 	top: 8px;
-	z-index: 15000;
-	font-size: 2em;
-	cursor: pointer;
 }
-
+#cross {
+	position: absolute;
+	left: 170px;
+	top: 8px;
+}
+#navbutton:hover,#cross:hover{
+	color: #f2e6C1;
+}
 
 
 /* 【コンテンツボックス】スクロールでふわっと出現

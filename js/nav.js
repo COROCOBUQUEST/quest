@@ -3,13 +3,14 @@ $(function(){
 //スクリーンサイズ取得
 	var windowWidth = $(window).width()+17;
 	//ボタン作る
-	$('#container').before('<p id="navbutton"><i class="fa fa-book"></i></p>');
+	$('nav').before('<p id="navbutton"><i class="fa fa-book"></i></p>');
+	$('nav').prepend('<p id="cross"><i class="fa fa-times"></i></p>');
 	$('#navbutton').hide();
 
 	$(window).resize(function(){
 		var windowWidth = $(window).width()+17;
 		if(windowWidth <= 400){
-			$('nav').css({left:'-500px'});
+			$('nav').css({left:'-210px'});
 			$('#navbutton').show();
 		}else{
 			$('nav').css({left:'0px'});
@@ -17,28 +18,46 @@ $(function(){
 		}
 	});
 	if(windowWidth <= 400){
-		$('nav').css({left:'-500px'});
+		$('nav').css({left:'-210px'});
 		$('#navbutton').show();
 	}else{
 		$('nav').css({left:'0px'});
-		$('#navbutton').hide();
+		$('#navbutton,#cross').hide();
 	}
 
-	
-	
+	$('#navbutton').click(function(){
+			$('nav').animate({left:'0px'},400,function(){
+				$('#navbutton').hide();
+			});
+	});
+	$('#cross').click(function(){
+			$('nav').animate({left:'-210px'},400,function(){
+				$('#navbutton').show();
+			});
+			
+	});
 
+
+	
+/*
 if(windowWidth<=400){
 
 	var flug = true;
 	$('#navbutton').click(function(){
 		if(flug == true){
-			$('nav').animate({left:'10px'},1000);
+			$('nav').animate({left:'0px'},1000);
+			$('#navbutton').hide();
 		}else{
-			$('nav').animate({left:'-500px'},1000);
+			$('nav').animate({left:'0px'},1000);
+			$('#navbutton').show();
 		}
 		flug = !flug;
 	});
+	
+	
+	
+	
 }//if400
-
+*/
 
 });

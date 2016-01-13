@@ -135,7 +135,7 @@ $(function(){
 			$('#goTop').fadeOut(800);
 		}
 //スクロールでナビ片付ける
-		if(scrlcount>=1000 && bkm>=150 && sWidth>400){
+		if(scrlcount>=900 && bkm>=150 && sWidth>400){
 			$('#global_menu').addClass('js_bookmark_off').css({left:'-200px'});
 			bkm = 50;
 		}

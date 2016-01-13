@@ -127,19 +127,24 @@
 		height: 100%;
 	}
 	nav {
-		width: 50%;
+		width: 210px;
 		height: 100%;
 		background-image: none;
 		background-color: rgba(255, 255, 255, 0.7);
 	}
 	nav ul {
-		margin-right: 5px;
+		margin: 60px 0 40px 10px;
 	}
 	nav ul li {
 		float: none;
+		margin-bottom: 20px;
+
 	}
 	nav ul li a {
 		padding-right: 5px;
+	}
+	#bookmark {
+		display: none;
 	}
 /*******hatubaibi*********/	
 	.sale {
