@@ -5,12 +5,11 @@
 	nav {
 		width: 300px;
 		height: 100px;
-		background-position: -10% 110%;
+		background-position: 0 100%;
 		background-repeat: no-repeat;
 	}
 	nav ul {
 		transform: none;
-		padding: 0;
 	}
 	nav ul li {
 		margin: 5px;
@@ -123,6 +122,26 @@
 
 /*スマホ用*/
 @media screen and (max-width:400px){
+/*nav*/
+	body, #container, header {
+		height: 100%;
+	}
+	nav {
+		width: 50%;
+		height: 100%;
+		background-image: none;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+	nav ul {
+		margin-right: 5px;
+	}
+	nav ul li {
+		float: none;
+	}
+	nav ul li a {
+		padding-right: 5px;
+	}
+/*******hatubaibi*********/	
 	.sale {
 		width: 250px;
 		height: 35px;

@@ -61,25 +61,25 @@ body {
 }
 /*******nav*********/
 nav {
-	width: 300px;
+	width: 350px;
 	display: inline-block;
 	position: fixed;
 	top: 0;
 	left: 0;
 	background-image: url("../img/nav/nav.png");
-	background-position: 95% 50%;
+	background-position: right 70%;
 	background-size: cover;
 }
 
 nav ul {
-	transform: rotate(-4deg);
-	padding: 0 0 0 25px;
-	margin: 0;
+	margin: 0 0 40px 30px;
+	transform: rotate(-7deg);
 }
 
 nav ul li{
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;
+	border-bottom: solid 1px #333;
 }
 
 /*******ヘッダー*********/
@@ -100,7 +100,7 @@ header {
 	padding: 0;
 	text-align: right;
 	display: block;
-	background-color: rgba(124, 207, 255,0.5);;
+	background-color: rgba(124, 207, 255,0.5);
 }
 
 .headrogo img {
