@@ -85,7 +85,7 @@ $(function(){
 		if(scrlcount>=(charaTop-800)){
 			$('#boxB').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(itemTop-800)){
+		if(scrlcount>=(itemTop-600)){
 			$('#boxC').addClass('js_fadein').css({opacity:'1'});
 		}
 

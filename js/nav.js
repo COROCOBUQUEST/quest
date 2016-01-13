@@ -11,18 +11,18 @@ $(function(){
 		var windowWidth = $(window).width()+17;
 		if(windowWidth <= 400){
 			$('nav').css({left:'-210px'});
-			$('#navbutton').show();
+			$('#navbutton,#cross').show();
 		}else{
 			$('nav').css({left:'0px'});
-			$('#navbutton').hide();
+			$('#navbutton,#cross').hide();
 		}
 	});
 	if(windowWidth <= 400){
 		$('nav').css({left:'-210px'});
-		$('#navbutton').show();
+		$('#navbutton,#cross').show();
 	}else{
 		$('nav').css({left:'0px'});
-		$('#navbutton,#cross').hide();
+		$('#navbutton').hide();
 	}
 
 	$('#navbutton').click(function(){

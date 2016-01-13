@@ -15,7 +15,7 @@ if(sWidth>=700){
 	});
 
 	//ロードした時、ナビの準備
-	$('#global_menu').css({position:'absolute',left:'-400px'});
+	$('#global_menu').css({position:'absolute',left:'-400px',top:'-200px'});
 
 	$('.sale').css({background:'none',width:'500px'});
 	$('#menu1').find('h2').css({
@@ -27,7 +27,7 @@ if(sWidth>=700){
 		$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1300,'easeInOutElastic');
 	},2000);
 	setTimeout(function(){
-		$('#global_menu').animate({left:'0'},1500);
+		$('#global_menu').animate({left:'0',top:'0'},1500);
 	},4000);
 	
 }
