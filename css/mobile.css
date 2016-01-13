@@ -22,7 +22,9 @@
 	}
 	.mainimgbox {
 		width: 100%;
-		background: tomato;
+		background-image: url("../img/pake.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
 	}
 	.mainimgbox img:nth-child(-n+3) {
 		visibility: hidden;
@@ -75,6 +77,9 @@
 	}
 	.tpibox ul {
 		margin: 10px 10px;
+	}
+	.topmovei:last-child {
+		margin: 15px 0 7px 10%;
 	}
 /******STORYの中箱*******/
 	.st-img {
@@ -158,6 +163,9 @@
 		width: 100%;
 		float: none;
 	}
+	.tpibox:last-child {
+		height: 230px;
+	}
 	/******phpで更新履歴のとこ***********/
 	.uphistory {
 		width: 100%;
@@ -177,6 +185,9 @@
 		margin: 50px 0 0 20px;
 	}
 	/******STORYの中箱*******/
+	.st-p {
+		margin: 0;
+	}
 	.st-img {
 		height: 100%;
 		padding: 20px;
@@ -184,6 +195,7 @@
 		background-size: 70%;
 	}
 	/******CHARACTER*******/
+	
 	.crbox {
 		background-position: center 0;
 		background-size: 70%;
