@@ -1,6 +1,20 @@
 $(function(){
 
-//メニュータイトルでスクロール
+//各ボックスの高さ・幅取得
+	var storyTop = $('#boxA').offset().top;
+	var charaTop = $('#boxB').offset().top;
+	var itemTop = $('#boxC').offset().top;
+	
+//スクリーンサイズ取得
+	var sWidth = 0;
+	sWidth = window.innerWidth;
+	alert(sWidth);
+
+//メニュータイトルクリックでスクロールリンク
+	$('#nav_top').click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		return false;
+	});
 	$('#nav_story').click(function(){
 		$('body,html').animate({scrollTop:storyTop},1000);
 		return false;
@@ -27,10 +41,24 @@ $(function(){
 	$('.bookmark').click(function(){
 		$('#global_menu').animate({left:'0px'},1000,'swing');
 	});
-/*
-	$('#nav_top,#nav_story,#nav_chara,#nav_item,#nav_ex').click(function(){
-		return false;
+
+
+
+
+if(sWidth<=400){
+	$('nav').css({left:'-500px'});
+	$('#container').before('<p id="navbutton">●</p>');
+	$('#navbutton').css({position:'fixed',left:'10px',top:'10px',zIndex:'15000',cursor:'pointer'});
+
+	var flug = true;
+	$('#navbutton').click(function(){
+		if(flug == true){
+			$('nav').animate({left:'0px'},1000);
+		}else{
+			$('nav').animate({left:'-500px'},1000);
+		}
+		flug = !flug;
 	});
-	*/
+}//if400
 
 });

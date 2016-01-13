@@ -141,25 +141,6 @@ $(function(){
 		}
 	});//スクロール
 
-//Nav・メニュータイトルクリックでスクロールリンク
-	$('#nav_top').click(function(){
-		$('body,html').animate({scrollTop:0},1000);
-		return false;
-	});
-	$('#nav_story').click(function(){
-		$('body,html').animate({scrollTop:storyTop},1000);
-		return false;
-	});
-	$('#nav_chara').click(function(){
-		$('body,html').animate({scrollTop:charaTop},1000);
-		return false;
-	});
-	$('#nav_item').click(function(){
-		$('body,html').animate({scrollTop:itemTop},1000);
-		return false;
-	});
-
-
 
 
 });

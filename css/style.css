@@ -204,9 +204,10 @@ header {
 
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
-	width: 100%;
-	margin: 5px;
+	width: 250px;
 }
+.topmovei:first-child {	margin: 15px 0 7px 10%;}
+.topmovei:last-child {	margin: 15px 10% 7px 7px;}
 
 /*******ソフト情報の箱*********/
 .softimg {
