@@ -335,16 +335,20 @@ header {
 .itemp {
 	width: 330px;
 	height: 300px;
+	padding: 5px;
 	border: solid 1px #555;
 	display: inline-block;
 	float: left;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	color: #fff;
 }
 .itemp:nth-child(2n+1) {
 	margin-top: 30px;
 }
 .itemp:nth-child(2n) {
 	margin-top: 30px;
-	margin-left: 80px;
+	margin-left: 40px;
 }
 .itemp img {
 	margin: 3px;
