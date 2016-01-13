@@ -19,7 +19,7 @@ if(sWidth>=700){
 	});
 
 	//ロードした時、ナビの準備
-	$('#global_menu').css({position:'absolute',left:'-400px',top:'-200px'});
+	$('#global_menu').css({position:'fixed',left:'-400px',top:'-200px'});
 
 	$('.sale').css({background:'none',width:'500px'});
 	$('#menu1').find('h2').css({
