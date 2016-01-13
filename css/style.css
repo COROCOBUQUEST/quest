@@ -210,6 +210,10 @@ header {
 	margin: 10px 3%;
 }
 
+.topmovei img {
+	border: solid 2px #F8AC4A;
+}
+
 /*******ソフト情報の箱*********/
 .softimg {
 	padding: 10px 0 10px 5px;
@@ -316,7 +320,7 @@ header {
 
 .cr-pvimg {
 	margin: 25% 10px 10px;
-	border: solid 2px #1D2E82;
+	border: solid 2px #F8AC4A;
 	float: left;
 }
 
