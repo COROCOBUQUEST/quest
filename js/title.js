@@ -14,7 +14,6 @@ if(sWidth>=700){
 	//ロードした時、タイトルの準備
 	$('#title_logo').css({
 		width:'2010px',
-		height:'450px',
 		opacity:'0'
 	});
 
@@ -26,9 +25,11 @@ if(sWidth>=700){
 		color:'#fff',
 		fontSize:'3.8em',
 	});
-
+	
+	
+	//時差でタイトルが降ってきて、メニューも出てくる
 	setTimeout(function(){
-		$('#title_logo').animate({width:'670px',height:'150px',opacity:'1'},1300,'easeInOutElastic');
+		$('#title_logo').animate({width:'754px',height:'203px',opacity:'1'},2000,'easeInOutElastic');
 	},2000);
 	setTimeout(function(){
 		$('#global_menu').animate({left:'0',top:'0'},1500);

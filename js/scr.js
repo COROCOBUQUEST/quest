@@ -52,18 +52,6 @@ $(function(){
 		}
 	});
 
-/*--toggle version
-	var flug = true;
-	$('#bookmark').click(function(){
-		if(flug == false){
-			$('#global_menu').animate({left:'-200px'},500,'swing');
-		}else{
-			$('#global_menu').animate({left:'0px'},500,'swing');
-		}
-		flug = !flug;//flugの中に入っているboolianをひっくり返す
-	});
-*/
-
 
 ///////////////ここまで//////////////////////////////
 
@@ -91,7 +79,7 @@ $(function(){
 
 //スクロールでコンテンツがふわっと出てくる・キャラクター編
 
-		if(scrlcount>=(chara1-1800)){
+		if(scrlcount>=(chara1-800)){
 			$('#chara1').addClass('js_charabox_anime').removeClass('js_charabox_default');
 			setTimeout(function(){
 				$('#chara1 h3').addClass('js_chara_anime').removeClass('js_chara_default');
@@ -103,7 +91,7 @@ $(function(){
 				$('#chara1 .cr-p').addClass('js_chara_anime').removeClass('js_chara_default');
 			},1000);
 		}
-		if(scrlcount>=(chara2-1800)){
+		if(scrlcount>=(chara2-500)){
 			$('#chara2').addClass('js_charabox_anime').removeClass('js_charabox_default');
 			setTimeout(function(){
 				$('#chara2 h3').addClass('js_chara_anime').removeClass('js_chara_default');
@@ -115,7 +103,7 @@ $(function(){
 				$('#chara2 .cr-p').addClass('js_chara_anime').removeClass('js_chara_default');
 			},1000);
 		}
-		if(scrlcount>=(chara3-1800)){
+		if(scrlcount>=(chara3-500)){
 			$('#chara3').addClass('js_charabox_anime').removeClass('js_charabox_default');
 			setTimeout(function(){
 				$('#chara3 h3').addClass('js_chara_anime').removeClass('js_chara_default');

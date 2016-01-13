@@ -30,8 +30,9 @@ nav {
 #bookmark {
 	cursor: pointer;
 	position: relative;
-	left: 200px;
-	top: -100px;
+	left: 230px;
+	top: -30px;
+	transform: rotate(17deg);
 }
 
 .js_bookmark_off {
