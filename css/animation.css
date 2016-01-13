@@ -374,9 +374,10 @@ nav {
 
 #menu1>h2 {
 	position: relative;
-	top: -200px;
+	top: -230px;
 	transform: rotate(-6deg);
 	animation: onsaleboyan 3s;
+	text-shadow: 1px 1px 3px #000;
 }
 
 @keyframes onsaleboyan {

@@ -12,13 +12,14 @@ $(function(){
 //画面幅
 	var sWidth = 0;
 	sWidth = window.innerWidth;
-//それを表示する（後で消す）/////
-	$('#container').prepend('<p id="wlikid">横幅'+sWidth+'</p>');
-	$('#wlikid').css({position:'fixed',top:'20px',right:'0',zIndex:'500'});
+	
+//横幅をを表示する（後で消す）/////
+//	$('#container').prepend('<p id="wlikid">横幅'+sWidth+'</p>');
+//	$('#wlikid').css({position:'fixed',top:'20px',right:'0',zIndex:'500'});
 
 //右上のスクロール値を計って表示するやつ（あとで消す）/////
-	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
-	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});
+//	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
+//	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});
 
 //キャラボックスにクラス名つける
 	/*if($('div').hasClass('crbox')){*/
@@ -67,13 +68,13 @@ $(function(){
 
 //スクロールでコンテンツがふわっと出てくる・コンテンツボックス編
 
-		if(scrlcount>=(storyTop-700)){
+		if(scrlcount>=(storyTop-500)){
 			$('#boxA').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(charaTop-700)){
+		if(scrlcount>=(charaTop-500)){
 			$('#boxB').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(itemTop-700)){
+		if(scrlcount>=(itemTop-500)){
 			$('#boxC').addClass('js_fadein').css({opacity:'1'});
 		}
 
@@ -130,20 +131,34 @@ $(function(){
 	});//スクロール
 
 //Nav・メニュータイトルクリックでスクロールリンク
+
+function nav_patan(){
+		sWidth = window.innerWidth;
+		if(sWidth<=400){
+			$('nav').animate({left:'-210px'},400,function(){
+				$('#navbutton').show();
+			});
+		}
+}
+
 	$('#nav_top').click(function(){
 		$('body,html').animate({scrollTop:0},1000);
+		nav_patan();
 		return false;
 	});
 	$('#nav_story').click(function(){
 		$('body,html').animate({scrollTop:storyTop},1000);
+		nav_patan();
 		return false;
 	});
 	$('#nav_chara').click(function(){
 		$('body,html').animate({scrollTop:charaTop},1000);
+		nav_patan();
 		return false;
 	});
 	$('#nav_item').click(function(){
-		$('body,html').animate({scrollTop:itemTop},1000);
+		$('body,html').animate({scrollTop:itemTop},1000);	
+		nav_patan();
 		return false;
 	});
 
