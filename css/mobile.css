@@ -8,27 +8,33 @@
 /*nav*/
 	nav {
 		width: 300px;
-		height: 100px;
+		height: 130px;
 		background-position: 0 100%;
 		background-repeat: no-repeat;
 	}
 	nav ul {
 		transform: none;
+		width: 310px;
+		height: 150px;
+		margin: 2px;
 	}
 	nav ul li {
-		margin: 5px;
+		width: 130px;
+		margin: 0 5px 0 0;
 		font-size: 1.3em;
-		float: left ;
+		float: left;
+
 	}
 /*******タイトル*********/
 	.h1-title {
 		width: 100%;
+		margin-top: -100px;
 		background-size: 100% !important;
 	}
 /*キャラクターがふわっとしゅっと*/
 	.mainimgbox {
 		width: 100%;
-		height: 360px;
+		height: 320px;
 		background-image: url("../img/pake.png");
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -41,13 +47,14 @@
 	}
 /*******発売日*********/	
 	.sale {
-		background-size: contain;
+		margin-top: 100px;
+		background-size: cover;
 	}
 	/*******小さい箱でお知らせ*********/
 	.newstpics {
 		width: 100%;
-		top: 135%;
-		left: 2%;
+		top: 140%;
+		left: 1%;
 		margin: 0;
 	}
 	.newstpics ul {
@@ -58,6 +65,7 @@
 	}
 	.newstpics ul li {
 		margin: 5px;
+		width: 100%;
 	}
 /******topのしたのくくってるとこ箱***********/
 	.topunder {
@@ -82,7 +90,8 @@
 	.tpibox ul {
 		margin: 10px 10px;
 	}
-	.topmovei:last-child {
+	/******動画のとこ*******/
+	.topmovei {
 		margin: 15px 0 7px 10%;
 	}
 /******STORYの中箱*******/
@@ -178,6 +187,12 @@
 	}
 	.newstpics ul {
 		margin: 2px;
+	}
+	.newstpics ul li {
+		width: 90%;
+	}
+	.newstpics ul li img {
+		width: 100%;
 	}
 /******topのしたのくくってるとこ箱***********/
 	.topunder {

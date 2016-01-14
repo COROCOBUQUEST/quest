@@ -196,6 +196,8 @@ header {
 	border: solid #444 1px;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255,0.5);
+	font-weight: bold;
+	line-height: 1.1;
 }
 
 /******phpで更新履歴のとこ***********/
@@ -227,6 +229,9 @@ header {
 
 .tpibox ul {
 	margin: 55px 10px;
+}
+.softimg img {
+	border: solid 1px #FEB159;
 }
 /******メイン全体を入れてる箱*******/
 .maincontent {
