@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/*タブレット用*/
+
+/************************************************/
+/******* タブレット用       *********************/
+/************************************************/
+
 @media screen and (max-width:700px){
 /*nav*/
 	nav {
@@ -19,6 +23,7 @@
 		margin: 0 5px 0 0;
 		font-size: 1.3em;
 		float: left;
+
 	}
 /*******タイトル*********/
 	.h1-title {
@@ -133,7 +138,11 @@
 	}
 }
 
-/*スマホ用*/
+
+/************************************************/
+/******* スマホ用 400px     *********************/
+/************************************************/
+
 @media screen and (max-width:400px){
 /*nav*/
 	body, #container, header {
@@ -217,13 +226,15 @@
 	}
 	/******STORYの中箱*******/
 	.st-p {
-		margin: 0;
+		width: 80%;
+		margin: 300px auto;
 	}
 	.st-img {
-		height: 100%;
-		padding: 20px;
-		margin: 10px;
+		height: 30%;
+		padding: 0;
+		margin: 0;
 		background-size: 70%;
+		background-position: top;
 	}
 	/******CHARACTER*******/
 	
@@ -237,5 +248,35 @@
 	}
 	.cr-pvimg {
 		margin: 0 60px 10px 230px;
+	}
+
+	/*--- 各コンテンツのh2月とりんご ---*/
+	.maininner h2 {
+		margin-bottom: 100px;
+		padding-right: 0px;
+		text-align: center;
+	}
+	.maininner h2:after {
+		position: absolute;
+		left: calc(50% - (50px / 2));
+		top: 75px;
+		width: 50px;
+		height: 50px;
+	}
+	#boxC h2:after {
+		left: 20px;
+		top: 130px;
+		width: 34px;
+		height: 50px;
+	}
+	#boxA {
+		margin-top: 200px;
+	}
+	.story {
+		padding-top: 0px;
+	}
+	.maininner {
+		margin-top: 20px;
+		width: 100%;
 	}
 }
