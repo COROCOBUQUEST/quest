@@ -182,7 +182,11 @@ header {
 /******topのしたのくくってるとこ箱***********/
 .topunder {
 	width: 950px;
+<<<<<<< HEAD
 	margin: 0 auto;
+=======
+	margin: -10px auto 20px;
+>>>>>>> 39aa817a3cc037babc781a7fc0806c7f82ac48e2
 	position: relative;
 }
 
