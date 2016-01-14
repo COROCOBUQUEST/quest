@@ -285,9 +285,30 @@ nav {
 
 .left_chara {
 	animation: left_anime 0.5s;
+	-webkit-animation: left_anime 0.5s;
 }
 
 @keyframes left_anime {
+	0%{
+		left: 60px;
+		bottom: -7px;
+		display: none;
+		opacity: 0;
+	}
+	1%{
+		left: 60px;
+		bottom: -7px;
+		display: block;
+		opacity: 0;
+	}
+	100%{
+		left: 30px;
+		bottom: 0px;
+		display: block;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes left_anime {
 	0%{
 		left: 60px;
 		bottom: -7px;
@@ -311,6 +332,7 @@ nav {
 /*--真ん中のキャラ--*/
 .mainimgbox>img:nth-child(2){
 	animation: center_chara 1s;
+	-webkit-animation: center_chara 1s;
 }
 @keyframes center_chara {
 	0%{
@@ -320,12 +342,22 @@ nav {
 		bottom: 0px;
 	}
 }
+@-webkit-keyframes center_chara {
+	0%{
+		bottom: 10px;
+	}
+	100%{
+		bottom: 0px;
+	}
+}
+
 
 /*--右のキャラ--*/
 
 
 .right_chara {
 	animation: right_anime 0.5s;
+	-webkit-animation: right_anime 0.5s;
 }
 @keyframes right_anime {
 	0%{
@@ -347,23 +379,46 @@ nav {
 		opacity: 1;
 	}
 }
+/*chrome用*/
+@-webkit-keyframes right_anime {
+	0%{
+		left: 530px;
+		bottom: -7px;
+		display: none;
+		opacity: 0;
+	}
+	1%{
+		left: 530px;
+		bottom: -7px;
+		display: block;
+		opacity: 0;
+	}
+	100%{
+		left: 560px;
+		bottom: 0px;
+		display: block;
+		opacity: 1;
+	}
+}
+
 
 /*--右のニュースボックス--*/
 .slide_before {
 	position: relative;
 	right: -500px;
-
 }
 .slide_in {
 	animation: news_box 0.5s;
+	-webkit-animation: news_box 0.5s;
 }
 @keyframes news_box {
-	0%{
-		right: -500px;
-	}
-	100%{
-			right: -15%;
-	}
+	0%{right: -500px;}
+	100%{right: -15%;}
+}
+/*chrome用*/
+@-webkit-keyframes news_box {
+	0%{right: -500px;}
+	100%{right: -15%;}
 }
 
 /*--4016年発売決定！--*/
@@ -377,10 +432,16 @@ nav {
 	top: -230px;
 	transform: rotate(-6deg);
 	animation: onsaleboyan 3s;
+	-webkit-animation: onsaleboyan 3s;
 	text-shadow: 1px 1px 3px #000;
 }
 
 @keyframes onsaleboyan {
+	0%{filter: blur(30px);}
+	100%{filter: blur(0px);}
+}
+/*chrome用*/
+@-webkit-keyframes onsaleboyan {
 	0%{filter: blur(30px);}
 	100%{filter: blur(0px);}
 }
