@@ -83,6 +83,9 @@
 	.uphistory {
 		margin-left: 5px;
 	}
+	.tpibox h3 {
+		left: 0px;
+	}
 	/*******ソフト情報の箱*********/
 	.softimg {
 		padding: 25px 0 0 10px;
@@ -198,6 +201,7 @@
 	.topunder {
 		margin-top: 80px;
 	}
+	
 	/******更新履歴と動画(画像)ソフト情報入れ***********/
 	.tpibox:first-child, .tpibox:last-child {
 		width: 100%;
@@ -208,9 +212,18 @@
 	}
 	/******phpで更新履歴のとこ***********/
 	.uphistory {
-		width: 100%;
+		width: 90%;
 		height: 40px;
-		margin: 0;
+		margin: -35px 0 0 0;
+		padding-left: 20px;
+		line-height: 40px;
+	}
+
+	.tpibox h3 {
+		color: #1f65d2;
+		font-size: 170%;
+		left: 0px;
+		position: relative;
 	}
 	/*******更新履歴の下の動画（画像）*********/
 	.topmovei img{
