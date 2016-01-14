@@ -175,6 +175,9 @@ header {
 .newstpics ul:first-child {
 	margin-top: 0px;
 }
+#newsslide ul li {
+	color: #f3ffbc;
+}
 
 /******topのしたのくくってるとこ箱***********/
 .topunder {
