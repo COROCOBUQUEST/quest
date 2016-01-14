@@ -14,12 +14,12 @@
 	nav ul li {
 		margin: 5px;
 		font-size: 1.3em;
-		float: left;
+		float: left !important;
 	}
 /*******タイトル*********/
 	.h1-title {
 		width: 100%;
-		background-size: 100%;
+		background-size: 100% !important;
 	}
 /*キャラクターがふわっとしゅっと*/
 	.mainimgbox {
@@ -37,9 +37,7 @@
 	}
 /*******発売日*********/	
 	.sale {
-		width: 350px;
-		height: 40px;
-		top: 42%;
+		background-size: contain;
 	}
 	/*******小さい箱でお知らせ*********/
 	.newstpics {
