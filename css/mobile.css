@@ -267,8 +267,9 @@
 		height: 50px;
 	}
 	#boxC h2:after {
-		left: 20px;
-		top: 130px;
+		position: absolute;
+		left: calc(50% - (34px / 2));
+		top: 75px;
 		width: 34px;
 		height: 50px;
 	}
