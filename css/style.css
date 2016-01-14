@@ -212,15 +212,20 @@ header {
 	left: -5px;
 	font-size: 170%;
 	transform: rotate(10deg);
-	
+	color: #1F65D2;
+	text-shadow: 2px 2px 0px #FFC719,
+			-2px 2px 0px #FFC719,
+			2px -2px 0px #FFC719,
+			-2px -2px 0px #FFC719;
 }
 
 .uphistory {
 	width: 90%;
 	height: 70px;
 	padding-left: 20px;
-	background-color: rgba(242, 212, 43,0.5);
+	background-color: rgba(0, 0, 0,0.3);
 	border-radius: 7px;
+	border: 3px solid #ffc719;
 	line-height: 70px;
 }
 
