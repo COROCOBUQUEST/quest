@@ -191,6 +191,7 @@ header {
 	width: 580px;
 	padding: 10px;
 	float: left;
+	position : relative;
 }
 
 .tpibox:last-child {
