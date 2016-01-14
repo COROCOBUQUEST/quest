@@ -278,16 +278,26 @@ header {
 	color: #fff;
 }
 .maininner h2:after {
-	content: url(../img/icons/moon_m.png);
-	position: relative;
-	left: 20px;
-	top: 30px;
-}
-#boxC h2:after {
-	content: url(../img/icons/apple.png);
+	content:' ';
 	position: relative;
 	left: 20px;
 	top: 20px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/icons/moon_m.png) no-repeat;
+	background-size: cover;
+}
+#boxC h2:after {
+	content:' ';
+	position: relative;
+	left: 20px;
+	top: 30px;
+	width: 68px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/icons/apple.png) no-repeat;
+	background-size: cover;
 }
 
 /******CHARACTER*******/
