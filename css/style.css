@@ -48,7 +48,10 @@ body {
 #bg_img {
 	position: relative;
 	z-index: 1;
-	background: steelblue;
+	background-image: url("../img/bgimg01.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #container {
@@ -56,21 +59,43 @@ body {
 	position: relative;
 	z-index: 100;
 }
+
+h2 {
+	margin: 10px;
+}
+
+
 /*******nav*********/
 nav {
-	border: solid 2px #000;
+	width: 350px;
 	display: inline-block;
 	position: fixed;
 	top: 0;
 	left: 0;
+	background-image: url("../img/nav/nav.png");
+	background-position: right ;
+	background-size: cover;
+}
+
+nav ul {
+	margin: 0 0 40px 30px;
+	transform: rotate(-7deg);
 }
 
 nav ul li{
+	width: 230px;
 	font-size: 2em;
 	font-family: 'Droid Serif', serif;
-	margin: 5px;
+	border-bottom: solid 1px #777;
 }
 
+nav ul li a {
+	color: #222;
+}
+
+nav ul li a:hover {
+	color: #AAA816;	
+}
 /*******ヘッダー*********/
 header {
 	width: 100%;
@@ -89,44 +114,35 @@ header {
 	padding: 0;
 	text-align: right;
 	display: block;
-	background-color: blue;
+	background-color: rgba(124, 207, 255,0.5);
 }
 
 .headrogo img {
-	margin: 2px 5px;
+	margin: 7px 15px;
+	height: 40px;
 }
 
 /*******キャラクターがふわっとしゅっと*********/
 .mainimgbox {
 	width: 80%;
-	height: 500px;
+	height: 600px;
 	margin: 10px auto 0;
-	background-color: aqua;
 }
 
 /*******タイトル*********/
 
 .h1-title {
-	width: 670px;
-	height: 150px;
+	width: 754px;
+	height: 203px;
 	margin: 0 auto;
-	background: url(http://placehold.jp/670x150.png) no-repeat;
+	background: url(../img/title.png) no-repeat;
 	background-size: cover;
 	background-position: center;
-	/*top: 500px;
-	left: calc(50% - 330px);
-	height: 10%;
-	margin: 0;
-	font-family: 'Droid Serif', serif;
-	font-size: 5em;
-	text-align: center;
-	left: 25%;
-	bottom: -5%;*/
 }
 #box_height {
 	height: 100px;
 	position: relative;
-	top: -50px;
+	top: -130px;
 }
 .h1-title img {
 	width: 670px;
@@ -139,56 +155,102 @@ header {
 	position: absolute;
 	top: 45%;
 	left: 18%;
-	background: green;
 	z-index: 100;
 }
 
 /*******小さい箱でお知らせ*********/
 .newstpics {
-	margin: 10%;
+	margin-right: 10%;
 	position: absolute;
 	top: 5%;
-	right: -10%;
+	right: -15%;
+	text-align: right;
+	font-size: 0.8em;
 	z-index: 102;
+}
+
+.newstpics ul {
+	margin-top: 13px;
+}
+.newstpics ul:first-child {
+	margin-top: 0px;
+}
+#newsslide ul li {
+	color: #f3ffbc;
 }
 
 /******topのしたのくくってるとこ箱***********/
 .topunder {
-	width: 80%;
-	margin: 20px auto;
-	background: pink;
+	width: 950px;
+	margin: -10px auto 20px;
+	position: relative;
 }
 
 /******更新履歴と動画(画像)ソフト情報入れ***********/
 .tpibox:first-child {
-	width: 65%;
-	background: red;
+	width: 580px;
 	padding: 10px;
 	float: left;
+	position : relative;
 }
 
 .tpibox:last-child {
-	width: 32%;
+	width: 330px;
 	margin-top: 20px;
 	float: right;
-	background: aqua;	
+	border: solid #444 1px;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255,0.5);
+	font-weight: bold;
+	line-height: 1.1;
 }
 
 /******phpで更新履歴のとこ***********/
-.uphistory {
-	width: 100%;
-	height: 70px;
-	background-color: rgba(124, 207, 255,0.5);
+
+.tpibox h3 {
+	position: absolute;
+	top: -10px;
+	left: -5px;
+	font-size: 170%;
+	transform: rotate(10deg);
+	color: #1F65D2;
+	text-shadow: 2px 2px 0px #FFC719,
+			-2px 2px 0px #FFC719,
+			2px -2px 0px #FFC719,
+			-2px -2px 0px #FFC719;
 }
 
+.uphistory {
+	width: 560px;
+	height: 70px;
+	padding-left: 20px;
+	background-color: rgba(0, 0, 0,0.3);
+	border-radius: 7px;
+	border: 3px solid #ffc719;
+	line-height: 70px;
+}
+
+.uphistory>dt,.uphistory>dd {
+	float: left;
+	font-size: 110%;
+}
+.uphistory>dd {
+	margin-left: 20px;
+}
 /*******更新履歴の下の動画（画像）*********/
 .topmovei {
-	margin: 5px;
+	width: 250px;
+	margin: 15px 3%;
+}
+
+.topmovei img {
+	border: solid 2px #F8AC4A;
+	cursor: pointer;
 }
 
 /*******ソフト情報の箱*********/
 .softimg {
-	padding: 10px 0;
+	padding: 10px 0 10px 5px;
 }
 
 .softimg,.tpibox ul {
@@ -196,12 +258,15 @@ header {
 }
 
 .tpibox ul {
-	margin: 55px 10px;
+	margin: 55px 5px;
+}
+
+.softimg img {
+	border: solid 1px #FEB159;
 }
 /******メイン全体を入れてる箱*******/
 .maincontent {
 	width: 100%;
-	background-color: gold;
 	margin: 0 auto;
 }
 
@@ -212,43 +277,90 @@ header {
 /******STORYの外箱*******/
 .maininner {
 	width: 100%;
-/*	height: 900px;*/
+	margin-top: 200px;
 }
 
 /******STORYの中箱*******/
 .st-img {
-	width:100%%;
+	width:100%;
 	height: 800px;
-	margin: 10px;
-	background-image: url("../img/storyimg01.png");
+	margin: 0 auto;
+	background-image: url("../img/character/storyimg01.png");
 	background-repeat: no-repeat;
 	background-position: 20% center;
+	text-align: right;
 }
 
 .st-p {
-	width: 30%;
+	width: 35%;
 	height: 50%;
-	margin: 30px;
+	margin: 50px 50px 0 0;
+	padding: 40px 20px;
 	border: solid 1px #222;
 	display: inline-block;
-	float:right;
+	background: rgba(0,0,0,0.5);
+	border: 1px dotted #fff;
+	border-radius: 20px;
+	color: #fff;
+}
+
+.story {
+	padding-top: 100px;
+}
+.maininner h2 {
+	padding-right: 100px;
+	font-size: 3em;
+	text-align: right;
+	color: #fff;
+}
+.maininner h2:after {
+	content:' ';
+	position: relative;
+	left: 20px;
+	top: 20px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/icons/moon_m.png) no-repeat;
+	background-size: cover;
+}
+#boxC h2:after {
+	content:' ';
+	position: relative;
+	left: 20px;
+	top: 30px;
+	width: 68px;
+	height: 100px;
+	display: inline-block;
+	background: url(../img/icons/apple.png) no-repeat;
+	background-size: cover;
 }
 
 /******CHARACTER*******/
-.maininner:nth-child(2) {
-	background-color: orange;
-}
 
 .crbox {
 	width: 80%;
-	height: 550px;
-	margin: 20px 12%;
-	padding: 0;
-	border: solid 1px #444;
+	margin: 15px 10%;
+	padding: 3%;
 	display: inline-block;
-	background-image: url("http://placehold.jp/300x400.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	border: 1px dotted #fff;
+	border-radius: 20px;
+	background-color: rgba(242, 212, 43, 0.5);
+}
+
+.crbox:nth-child(2) {
+	background-image: url("../img/character/chara03.png");
+	background-position: top;
+}
+
+.crbox:nth-child(3) {
+	background-image: url("../img/character/chara02.png");
+}
+
+.crbox:last-child {
+	background-image: url("../img/character/chara01.png");
 }
 
 .crbox h3 {
@@ -256,61 +368,73 @@ header {
 	margin: 10px;
 }
 
-.cname-h:nth-child(2){
-	color: red;
-}
-
 .cr-p {
-	width: 220px;
-	height: 300px;
+	width: 26%;
+	height: 50%;
+	margin: 10px;
 	padding: 6px;
 	border: solid 1px #333;
 	display: inline-block;
 	background-color: rgba(255,255,255,0.5);
-	position: relative;
-	left: 70%;
-	top: 25%;
+	float: right;
 }
 
 .cr-pvimg {
-	border: solid 2px #1D2E82;
-	position: relative;
-	right: 20%;
-	top: 5%;
+	margin: 25% 10px 10px;
+	border: solid 2px #F8AC4A;
+	float: left;
+	cursor: pointer;
 }
 
+
 /******ITEM*******/
-.maininner:nth-child(3) {
-	background-color: blue;
+
+.item_box {
+	width: calc((334px * 2) + 80px);
+	margin-left: 30%;	
+	padding-bottom: 20px;
 }
 
 .itemp {
 	width: 330px;
 	height: 300px;
-	margin: 30px 70px ;
+	padding: 5px;
 	border: solid 1px #555;
 	display: inline-block;
 	float: left;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	color: #fff;
 }
-
+.itemp:nth-child(2n+1) {
+	margin-top: 30px;
+}
+.itemp:nth-child(2n) {
+	margin-top: 30px;
+	margin-left: 40px;
+}
 .itemp img {
 	margin: 3px;
 }
 /*********フッター************/
 footer {
 	width: 100%;
-	background: gold;
 	padding: 10px;
 	text-align: center;
+	background-color: rgba(124, 207, 255,0.5);
 }
 
 .f-icon {
 	width: 300px;
 	margin: 10px auto;
 }
-
+.f-icon img {
+	width: 50px;
+	height: 50px;
+}
 .f-icon a {
 	margin: 0 calc( 30% / 4 );
+	
 }
 
 .copyright {

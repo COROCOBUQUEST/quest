@@ -12,13 +12,14 @@ $(function(){
 //画面幅
 	var sWidth = 0;
 	sWidth = window.innerWidth;
-//それを表示する（後で消す）/////
-	$('#container').prepend('<p id="wlikid">横幅'+sWidth+'</p>');
-	$('#wlikid').css({position:'fixed',top:'20px',right:'0',zIndex:'500'});
+	
+//横幅をを表示する（後で消す）/////
+//	$('#container').prepend('<p id="wlikid">横幅'+sWidth+'</p>');
+//	$('#wlikid').css({position:'fixed',top:'20px',right:'0',zIndex:'500'});
 
 //右上のスクロール値を計って表示するやつ（あとで消す）/////
-	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
-	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});
+//	$('#container').prepend('<p id="scrcnt">スクロール0</p>');
+//	$('#scrcnt').css({position:'fixed',top:'0',right:'0',zIndex:'500'});
 
 //キャラボックスにクラス名つける
 	/*if($('div').hasClass('crbox')){*/
@@ -52,18 +53,6 @@ $(function(){
 		}
 	});
 
-/*--toggle version
-	var flug = true;
-	$('#bookmark').click(function(){
-		if(flug == false){
-			$('#global_menu').animate({left:'-200px'},500,'swing');
-		}else{
-			$('#global_menu').animate({left:'0px'},500,'swing');
-		}
-		flug = !flug;//flugの中に入っているboolianをひっくり返す
-	});
-*/
-
 
 ///////////////ここまで//////////////////////////////
 
@@ -79,13 +68,13 @@ $(function(){
 
 //スクロールでコンテンツがふわっと出てくる・コンテンツボックス編
 
-		if(scrlcount>=(storyTop-800)){
+		if(scrlcount>=(storyTop-500)){
 			$('#boxA').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(charaTop-800)){
+		if(scrlcount>=(charaTop-500)){
 			$('#boxB').addClass('js_fadein').css({opacity:'1'});
 		}
-		if(scrlcount>=(itemTop-800)){
+		if(scrlcount>=(itemTop-500)){
 			$('#boxC').addClass('js_fadein').css({opacity:'1'});
 		}
 
@@ -103,7 +92,7 @@ $(function(){
 				$('#chara1 .cr-p').addClass('js_chara_anime').removeClass('js_chara_default');
 			},1000);
 		}
-		if(scrlcount>=(chara2-800)){
+		if(scrlcount>=(chara2-500)){
 			$('#chara2').addClass('js_charabox_anime').removeClass('js_charabox_default');
 			setTimeout(function(){
 				$('#chara2 h3').addClass('js_chara_anime').removeClass('js_chara_default');
@@ -115,7 +104,7 @@ $(function(){
 				$('#chara2 .cr-p').addClass('js_chara_anime').removeClass('js_chara_default');
 			},1000);
 		}
-		if(scrlcount>=(chara3-800)){
+		if(scrlcount>=(chara3-500)){
 			$('#chara3').addClass('js_charabox_anime').removeClass('js_charabox_default');
 			setTimeout(function(){
 				$('#chara3 h3').addClass('js_chara_anime').removeClass('js_chara_default');
@@ -129,29 +118,47 @@ $(function(){
 		}
 
 //スクロールでにくきゅう登場
-		if(scrlcount>=1500){
+		if(scrlcount>=1200){
 			$('#goTop').fadeIn(800);
 		}else{
 			$('#goTop').fadeOut(800);
 		}
 //スクロールでナビ片付ける
-		if(scrlcount>=1000 && bkm>=150 && sWidth>400){
+		if(scrlcount>=900 && bkm>=150 && sWidth>400){
 			$('#global_menu').addClass('js_bookmark_off').css({left:'-200px'});
 			bkm = 50;
 		}
 	});//スクロール
 
 //Nav・メニュータイトルクリックでスクロールリンク
+
+function nav_patan(){
+		sWidth = window.innerWidth;
+		if(sWidth<=400){
+			$('nav').animate({left:'-210px'},400,function(){
+				$('#navbutton').show();
+			});
+		}
+}
+
+	$('#nav_top').click(function(){
+		$('body,html').animate({scrollTop:0},1000);
+		nav_patan();
+		return false;
+	});
 	$('#nav_story').click(function(){
 		$('body,html').animate({scrollTop:storyTop},1000);
+		nav_patan();
 		return false;
 	});
 	$('#nav_chara').click(function(){
 		$('body,html').animate({scrollTop:charaTop},1000);
+		nav_patan();
 		return false;
 	});
 	$('#nav_item').click(function(){
-		$('body,html').animate({scrollTop:itemTop},1000);
+		$('body,html').animate({scrollTop:itemTop},1000);	
+		nav_patan();
 		return false;
 	});
 

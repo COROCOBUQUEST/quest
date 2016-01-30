@@ -5,21 +5,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <title>COROCOBUQUEST|公式サイト</title>
 <link type="text/css" rel="stylesheet" href="./css/style.css">
-<link type="text/css" rel="stylesheet" href="./css/animation.css">
 <link type="text/css" rel="stylesheet" href="./css/mobile.css">
+<link type="text/css" rel="stylesheet" href="./css/title_chara.css">
+<link type="text/css" rel="stylesheet" href="./css/animation.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
-<script src="./js/scr.js"></script>
-<script src="./js/title.js"></script>
-<script src="./js/background.js"></script>
 </head>
 
 <body>
-<!--ローディング入れたい-----------
 <div id="loading"><i class="fa fa-cog fa-spin"></i></div>
------------------------------------>
 <div id="bg_img">
 	<div id="container">
 		<header>
@@ -30,36 +24,36 @@
 					<li><a id="nav_story" href="#">STORY</a></li>
 					<li><a id="nav_chara" href="#">CHARACTER</a></li>
 					<li><a id="nav_item" href="#">ITEM</a></li>
-					<li><a id="nav_ex" href="#">Ex</a></li>
+					<li><a id="nav_ex" href="./secret/index.html">Ex</a></li>
 				</ul>
-				<img src="http://placehold.jp/100x50.png" id="bookmark">
+				<img src="./img/nav/navbkm.png" id="bookmark">
 			</nav>
 		<!-----topぽいとこ------------------------------------------------------------------------->
 			<div id="menu1" class="topn">
 			<!--ろご？-->
-			<p class="headrogo"><img src="http://placehold.jp/50x50.png"></p>
+			<p class="headrogo"><img src="./img/icons/playston.png" alt="ぷれいすとん"></p>
 				<!--キャラクターがふわっとしゅっと-->
 				<div class="mainimgbox">
-					<img src="http://placehold.jp/300x500.png">
-					<img src="http://placehold.jp/300x500.png">
-					<img src="http://placehold.jp/300x500.png">
+					<img src="./img/character/chara01.png" id="left_chara">
+					<img src="./img/character/chara03.png">
+					<img src="./img/character/chara02.png" id="right_chara">
 		<!---------小さい箱でお知らせ-------------------------------------------------->
-					<div class="newstpics">
+					<div id="newsslide" class="newstpics">
 						<ul>
-							<li><img src="http://placehold.jp/160x80.png"></li>
+							<li><img src="./img/icons/twt_campaign.png" alt="ツイッターフォローキャンペーン"></li>
 							<li>ツイッターフォローキャンペーン開催中！</li>
 						</ul>
 						<ul>
-							<li><img src="http://placehold.jp/160x80.png"></li>
+							<li><img src="./img/icons/icon_cam.png" alt="アイコン配布中！"></li>
 							<li>アイコン配布中！</li>
 						</ul>
 						<ul>
-							<li><img src="http://placehold.jp/160x80.png"></li>
+							<li><img src="./img/icons/no_ie.png" alt="NO! IE!"></li>
 							<li>NO!IE!</li>
 						</ul>
 					</div><!--newstpics-->
 				</div><!--mainimgbox-->
-				<h2 class="sale">4016年1月15日発売決定！</h2>
+				<h2 class="sale">4016年1月15日<br>発売決定！</h2>
 		<!--------ばーんとタイトル-------------------------->
 				<div id="box_height">
 					<h1 id="title_logo" class="h1-title"><!--<img src="http://placehold.jp/670x150.png" alt="COROCOBUQUEST">--></h1>
@@ -71,11 +65,11 @@
 							<dt>00/00/00</dt>
 							<dd>newsnews</dd>
 						</dl>
-						<p class="topmovei"><img src="http://placehold.jp/250x140.png"></p>
-						<p class="topmovei"><img src="http://placehold.jp/250x140.png"></p>
+							<p class="topmovei"><img src="./img/movi/movi001.jpg" alt="トレーラー"></p>
+							<p class="topmovei"><img src="./img/movi/movi002.jpg" alt="ゲーム紹介"></p>
 					</div>
 					<div class="tpibox">
-						<p class="softimg"><img src="http://placehold.jp/150x200.png"></p>
+						<p class="softimg"><img src="./img/soft.png"></p>
 						<ul>
 							<li>4016年1月15日発売</li>
 							<li>ハード：PlaySton100</li>
@@ -89,58 +83,65 @@
 		</header>
 	<!--------STORY------------------------------------------------------>
 		<div class="maincontent">
-			<div id="boxA" class="story maininner clearfix">
+			<div id="boxA" class="story maininner">
 				<h2>STORY</h2>
 				<div class="st-img">
 					<p class="st-p">
-					storystorystory
-					storystorystory
-					storystorystory
-					storystorystory</p>
+					『長靴をはいた猫』（ながぐつをはいたねこ、仏: Le Chat botte）は、ヨーロッパに伝わる民話。1697年に出版された、シャルル・ペローによる『寓意のある昔話、またはコント集?がちょうおばさんの話』（仏: Histoires ou contes du temps passe.Avec de moralites : Contes de ma mere l'Oye.）に収録されたものが有名。<br>それ以前のものでは、1634年に出版された、ジャンバティスタ・バジーレによる『物語の物語、または小さき者たちのための楽しみ/ペンタメローネ』（伊: Lo cunto de li cunti overo lo trattenemiento de peccerille）に収められている。『グリム童話』の初稿にも『靴はき猫』（独: Der gestiefelte Kater）というタイトルで収められていた。日本では1969年（昭和44年）などにアニメ化されている<br>参照wikipedia</p>
 				</div>
 			</div><!--story終わり-->
 	<!--------CHARACTER------------------------------------------------------>
-			<div id="boxB" class="maininner character">
+			<div id="boxB" class="maininner character ">
 				<h2>CHARACTER</h2>
 
-				<div id="chara1" class="crbox">
+				<div id="chara1" class="crbox clearfix">
 					<h3 class="cname-h">CHARACTER1</h3>
 					<p class="cr-p">属名 Canis、種小名 lupus はラテン語でそれぞれ「犬」「狼」の意。亜種名 familiaris はやはりラテン語で、「家庭に属する」といった意味。また、英語: familiar、フランス語: familier など「慣れ親しんだ」を意味する現代語の語源でもある。イヌはカール・フォン・リンネ（1758年）以来、伝統的に独立種 Canis familiaris とされてきたが</p>
-					<img class="cr-pvimg" src="http://placehold.jp/250x140.png">
+					<img class="cr-pvimg" src="./img/movi/coro-m.jpg" alt="ころちゃん">
 				</div>
 				
-				<div id="chara2" class="crbox">
+				<div id="chara2" class="crbox clearfix">
 					<h3 class="cname-h">CHARACTER2</h3>
 					<p class="cr-p">属名 Canis、種小名 lupus はラテン語でそれぞれ「犬」「狼」の意。亜種名 familiaris はやはりラテン語で、<br>「家庭に属する」といった意味。また、英語: familiar、フランス語: familier など「慣れ親しんだ」を意味する現代語の語源でもある。</p>
-					<img class="cr-pvimg" src="http://placehold.jp/250x140.png">
+					<img class="cr-pvimg" src="./img/movi/cobu-m01.jpg" alt="こぶちゃん">
 				</div>
 
-				<div id="chara3" class="crbox">
+				<div id="chara3" class="crbox clearfix">
 					<h3 class="cname-h">CHARACTER3</h3>
 					<p class="cr-p">属名 Canis、種小名 lupus はラテン語でそれぞれ「犬」「狼」の意。亜種名 familiaris はやはりラテン語で、<br>「家庭に属する」といった意味。また、英語: familiar、フランス語: familier など「慣れ親しんだ」を意味する現代語の語源でもある。</p>							
-					<img class="cr-pvimg" src="http://placehold.jp/250x140.png">
+					<img class="cr-pvimg" src="./img/movi/cobu-m02.jpg" alt="オコ山">
 				</div>
 				
 			</div><!--chara終わり-->
 	<!--------ITEM------------------------------------------------------>
-			<div id="boxC" class="maininner clearfix">
+			<div id="boxC" class="maininner">
 				<h2>ITEM</h2>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item1item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item2item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item3item1item1item1</p>
-				<p class="itemp"><img src="http://placehold.jp/300x200.png">item4item1item1item1</p>
+				<div class="item_box clearfix">
+					<p class="itemp"><img src="./img_item/book.png">item1item1item1item1</p>
+					<p class="itemp"><img src="./img_item/item1.png">item2item1item1item1</p>
+					<p class="itemp"><img src="./img_item/weapon.png">item3item1item1item1</p>
+					<p class="itemp"><img src="./img_item/wear.png">item4item1item1item1</p>
+				</div>
 			</div><!--ITEM終わり-->
 		</div>
 	<!--------footer------------------------------------------------------>
 		<footer>
 			<div class="f-icon">
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
-				<a href="#"><img src="http://placehold.jp/50x50.png"></a>
+				<a href="#"><img src="./img/icons/Twitter.png"></a>
+				<a href="#"><img src="./img/icons/Facebook.png"></a>
+				<a href="#"><img src="./img/icons/Line.png"></a>
 			</div>
 			<p class="copyright">&copy;&nbsp;2016&nbsp;YUKIYA/COROCOBUQUEST&nbsp;Project/Nantendo/Suny Entertainment Inc.&nbsp;All Rights Reserved.</p>
 		</footer>
 	</div><!--container-->
 </div><!--bg_img-->
+<!--/ jQuery群こっから /-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="./js/scr.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./js/background.js"></script>
+<script src="./js/title.js"></script>
+<!--/ jQuery群ここまで /-->
 </body>
 </html>

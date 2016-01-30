@@ -1,36 +1,63 @@
 $(function(){
+	
+//スクリーンサイズ取得
+	var windowWidth = $(window).width()+17;
+	//ボタン作る
+	$('nav').before('<p id="navbutton"><i class="fa fa-book"></i></p>');
+	$('nav').prepend('<p id="cross"><i class="fa fa-times"></i></p>');
+	$('#navbutton').hide();
 
-//メニュータイトルでスクロール
-	$('#nav_story').click(function(){
-		$('body,html').animate({scrollTop:storyTop},1000);
-		return false;
-	});
-	$('#nav_chara').click(function(){
-		$('body,html').animate({scrollTop:charaTop},1000);
-		return false;
-	});
-	$('#nav_item').click(function(){
-		$('body,html').animate({scrollTop:itemTop},1000);
-		return false;
-	});
-
-	$(document).scroll(function(){
-		if(){
-		
+	$(window).resize(function(){
+		var windowWidth = $(window).width()+17;
+		if(windowWidth <= 400){
+			$('nav').css({left:'-210px'});
+			$('#navbutton,#cross').show();
+		}else{
+			$('nav').css({left:'0px'});
+			$('#navbutton,#cross').hide();
 		}
 	});
+	if(windowWidth <= 400){
+		$('nav').css({left:'-210px'});
+		$('#navbutton,#cross').show();
+	}else{
+		$('nav').css({left:'0px'});
+		$('#navbutton,#cross').hide();
+	}
 
-	$('#global_menu').css({left:'-150px'});
-
-
-//ブックマーククリックで出たり引っ込んだり
-	$('.bookmark').click(function(){
-		$('#global_menu').animate({left:'0px'},1000,'swing');
+	$('#navbutton').click(function(){
+			$('nav').animate({left:'0px'},400,function(){
+				$('#navbutton').hide();
+			});
 	});
+	$('#cross').click(function(){
+			$('nav').animate({left:'-210px'},400,function(){
+				$('#navbutton').show();
+			});
+			
+	});
+
+
+	
 /*
-	$('#nav_top,#nav_story,#nav_chara,#nav_item,#nav_ex').click(function(){
-		return false;
+if(windowWidth<=400){
+
+	var flug = true;
+	$('#navbutton').click(function(){
+		if(flug == true){
+			$('nav').animate({left:'0px'},1000);
+			$('#navbutton').hide();
+		}else{
+			$('nav').animate({left:'0px'},1000);
+			$('#navbutton').show();
+		}
+		flug = !flug;
 	});
-	*/
+	
+	
+	
+	
+}//if400
+*/
 
 });
